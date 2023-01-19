@@ -5,6 +5,7 @@ import './App.css';
 import Header from './components/header';
 import AboutMe from './components/aboutme';
 import Resume from './components/resume';
+import Tools from './components/tools';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         </Grid> 
 
         <Grid item xs = {4} md = {4}> 
+        <Tools></Tools>
         </Grid> 
 
       </Grid>
