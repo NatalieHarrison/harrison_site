@@ -7,6 +7,7 @@ import Header from './components/header';
 import AboutMe from './components/aboutme';
 import Resume from './components/resume';
 import Tools from './components/tools';
+import Footer from './components/footer';
 
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
         </Grid> 
       </Grid>
       <Divider  flexItem ></Divider>
-      
+      <Footer></Footer>
     </div>
   );
 }
