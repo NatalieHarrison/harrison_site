@@ -8,6 +8,7 @@ import AboutMe from './components/aboutme';
 import Resume from './components/resume';
 import Tools from './components/tools';
 import Footer from './components/footer';
+import Reviews from './components/reviews';
 
 
 function App() {
@@ -30,6 +31,8 @@ function App() {
         <Tools></Tools>
         </Grid> 
       </Grid>
+      <Divider  flexItem ></Divider>
+      <Reviews></Reviews>
       <Divider  flexItem ></Divider>
       <Footer></Footer>
     </div>
