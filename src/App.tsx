@@ -28,8 +28,9 @@ function App() {
         <Grid item xs = {3} md = {3}> 
         <Tools></Tools>
         </Grid> 
-
       </Grid>
+      <Divider  flexItem ></Divider>
+      
     </div>
   );
 }
