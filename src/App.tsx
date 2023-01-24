@@ -18,20 +18,21 @@ function App() {
       <Grid container spacing = {2} sx = {{mt: '5px'}}>
 
         <Grid item xs = {3} md = {3}> 
-        <AboutMe></AboutMe>
+          <AboutMe></AboutMe>
         </Grid> 
         <Divider orientation="vertical" flexItem ></Divider>
 
         <Grid item xs = {5} md = {5}> 
-        <Resume></Resume>
+          <Resume></Resume>
         </Grid> 
         <Divider orientation="vertical" flexItem ></Divider>
 
         <Grid item xs = {3} md = {3}> 
-        <Tools></Tools>
+          <Tools></Tools>
         </Grid> 
+
       </Grid>
-      <Divider  flexItem sx = {{mt: '10px', mb: '10px'}}></Divider>
+      <Divider  flexItem sx = {{mt: '10px', mb: '25px'}}></Divider>
       
       <Reviews></Reviews>
       <Divider  flexItem sx = {{mt: '10px', mb: '10px'}} ></Divider>
