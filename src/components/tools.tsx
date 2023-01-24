@@ -1,5 +1,5 @@
 import React, {useState}from "react";
-import { Box, Button, Stack, IconButton } from "@mui/material";
+import { Box, Button, Stack, IconButton, Typography } from "@mui/material";
 import { Evaluate } from "./mathComponents/Evaluate";
 import { Simplify } from "./mathComponents/Simplify";
 import { Derivative } from "./mathComponents/Derive";
@@ -56,6 +56,9 @@ function Tools() {
     <div className="App">
 
       <Box>
+      <Typography variant = "h4" component="div" sx ={{flexGrow:1}}>
+            Tools
+          </Typography>
         <Stack  spacing = {2}>
           <Evaluate></Evaluate> 
 
