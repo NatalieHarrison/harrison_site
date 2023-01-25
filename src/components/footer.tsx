@@ -3,7 +3,7 @@ import Stack from '@mui/material/Stack';
 function Footer(){
 
   return(
-    <Box>
+    <Box sx = {{mb: 5}}>
       Links
       <Stack  direction="row" justifyContent="space-evenly" alignItems="center" spacing={2}>
      
