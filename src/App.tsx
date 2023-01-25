@@ -22,7 +22,7 @@ function App() {
         </Grid> 
         <Divider orientation="vertical" flexItem ></Divider>
 
-        <Grid item xs = {5} md = {5}> 
+        <Grid item xs = {5.5} md = {5.5}> 
           <Resume></Resume>
         </Grid> 
         <Divider orientation="vertical" flexItem ></Divider>
