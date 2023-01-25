@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
 import './App.css';
