@@ -8,7 +8,7 @@ import AboutMe from './components/aboutme';
 import Resume from './components/resume';
 import Tools from './components/tools';
 import Footer from './components/footer';
-import Reviews from './components/reviews';
+import Reviews from './components/reviewComp';
 
 
 function App() {
