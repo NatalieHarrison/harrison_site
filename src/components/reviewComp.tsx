@@ -19,8 +19,9 @@ function ReviewComp(){
         <Grid xs = {6}>
           <Container>
             <Stack  direction="row" justifyContent="flex-start" alignItems="center" spacing={2} sx = {{mb: 1}}>
+
               <Typography> </Typography>
-              <Typography> {}</Typography>
+
             </Stack>
             <Stack  direction="row" justifyContent="flex-start" alignItems="center" spacing={2}>
               <TextField id="outlined-basic" label="Share details of your experience with Natalie"  multiline rows = {5} variant="outlined" sx = {{width: 500}} />
