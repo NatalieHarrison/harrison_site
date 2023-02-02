@@ -11,6 +11,18 @@ import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Reviews } from "../models";
 import { fetchByPath, validateField } from "./utils";
 import { DataStore } from "aws-amplify";
+import { DataStore } from '@aws-amplify/datastore';
+import { Reviews } from './models';
+
+await DataStore.save(
+  new Reviews({
+  "name": "Lorem ipsum dolor sit amet",
+  "company": "Lorem ipsum dolor sit amet",
+  "comment": "Lorem ipsum dolor sit amet",
+  "date": "1970-01-01Z"
+})
+);
+
 export default function ReviewsCreateForm(props) {
   const {
     clearOnSuccess = true,

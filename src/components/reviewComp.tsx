@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid'; 
 import { ReviewsCreateForm } from '../ui-components';
-import { Schema } from './models/schema.js;
+
 
 
 
@@ -19,7 +19,7 @@ function ReviewComp(){
         <Grid xs = {6}>
           <Container>
             <Stack  direction="row" justifyContent="flex-start" alignItems="center" spacing={2} sx = {{mb: 1}}>
-              <Typography> {Schema.}</Typography>
+              <Typography> </Typography>
               <Typography> {}</Typography>
             </Stack>
             <Stack  direction="row" justifyContent="flex-start" alignItems="center" spacing={2}>
