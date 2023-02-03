@@ -7,7 +7,7 @@ import { Container } from '@mui/system';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid'; 
-import { ReviewsCreateForm } from '../ui-components';
+
 
 
 
@@ -31,7 +31,6 @@ function ReviewComp(){
       </Grid>
 
       <Grid xs = {6}>
-        <ReviewsCreateForm></ReviewsCreateForm>
       </Grid>
       </Grid>
     </Box>
