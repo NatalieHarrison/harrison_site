@@ -34,7 +34,6 @@ function App() {
       </Grid>
       <Divider  flexItem sx = {{mt: '10px', mb: '25px'}}></Divider>
       
-      <Reviews></Reviews>
       <Divider  flexItem sx = {{mt: '10px', mb: '10px'}} ></Divider>
       <Footer></Footer>
     </div>
