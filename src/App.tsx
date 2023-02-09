@@ -17,22 +17,18 @@ function App() {
       <Header></Header>
       <Grid container spacing = {2} sx = {{mt: '5px'}}>
 
-        <Grid item xs = {3} md = {3}> 
+        <Grid item xs = {4.5} md = {4.5}> 
           <AboutMe></AboutMe>
         </Grid> 
         <Divider orientation="vertical" flexItem ></Divider>
 
-        <Grid item xs = {5.5} md = {5.5} style={{maxHeight: 800, overflow: 'auto'}}> 
+        <Grid item xs = {7} md = {7} style={{maxHeight: 800, overflow: 'auto'}}> 
           <Resume></Resume>
-        </Grid> 
-        <Divider orientation="vertical" flexItem ></Divider>
-
-        <Grid item xs = {3} md = {3}> 
-          <Tools></Tools>
-        </Grid> 
+        </Grid>
 
       </Grid>
       <Divider  flexItem sx = {{mt: '10px', mb: '25px'}}></Divider>
+      <Tools></Tools>
       
       <Divider  flexItem sx = {{mt: '10px', mb: '10px'}} ></Divider>
       <Footer></Footer>
