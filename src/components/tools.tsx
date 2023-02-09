@@ -59,7 +59,7 @@ function Tools() {
       <Typography variant = "h4" component="div" sx ={{flexGrow:1}}>
             Tools
           </Typography>
-        <Stack  spacing = {2}>
+        <Stack  spacing = {100} direction = "row">
           <Evaluate></Evaluate> 
 
           <Stack direction = "row" spacing = {.5}>
