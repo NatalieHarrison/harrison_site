@@ -8,8 +8,8 @@ function AboutMe(){
       <Typography  variant = "h4" component="div" sx ={{flexGrow:1}}>
         About me
       </Typography>
-      <Container maxWidth="sm" sx = {{bgcolor: '#cfe8fc', width: '250px', height: '200px', mt: '15px',mb: '15px'}}>
-        Picture
+      <Container maxWidth="sm" sx = {{width: '250px', height: '200px', mt: '15px',mb: '15px'}}>
+        <img src = {headshot} width = "200px"></img>
       </Container>
 
       <Typography sx  = {{mr: '5px', ml: '5px'}}>

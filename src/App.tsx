@@ -30,7 +30,8 @@ function App() {
       <Divider  flexItem sx = {{mt: '10px', mb: '25px'}}></Divider>
       <Tools></Tools>
       
-      <Divider  flexItem sx = {{mt: '10px', mb: '10px'}} ></Divider>
+      <Divider  flexItem sx = {{mt: '10px'}} ></Divider>
+      
       <Footer></Footer>
     </div>
   );

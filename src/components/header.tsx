@@ -7,8 +7,8 @@ function Header(){
   return(
     <Box sx ={{flexGrow:1}}>
       <Appbar position="static">
-        <Toolbar>
-          <Typography variant = "h6" component="div" sx ={{flexGrow:1}}>
+        <Toolbar sx ={{backgroundColor: '#1C3879'}}>
+          <Typography variant = "h6" component="div" sx ={{flexGrow:1, color: '#F9F5EB'}}>
             Natalie Harrison
           </Typography>
         </Toolbar>
