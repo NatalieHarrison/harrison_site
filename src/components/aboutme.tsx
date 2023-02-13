@@ -4,7 +4,7 @@ import { Container, Typography } from '@mui/material';
 import headshot from "./../headshot.jpeg"
 function AboutMe(){
   return(
-    <Box >
+    <Box sx = {{ml: '20px'}}>
       <Typography  variant = "h4" component="div" sx ={{flexGrow:1}}>
         About me
       </Typography>

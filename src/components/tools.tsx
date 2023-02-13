@@ -55,11 +55,11 @@ function Tools() {
   return (
     <div className="App">
 
-      <Box>
+      <Box sx = {{ml: '20px'}}>
       <Typography variant = "h4" component="div" sx ={{flexGrow:1}}>
             Tools
           </Typography>
-        <Stack  spacing = {100} direction = "row">
+        <Stack  spacing = {20} direction = "row">
           <Evaluate></Evaluate> 
 
           <Stack direction = "row" spacing = {.5}>
