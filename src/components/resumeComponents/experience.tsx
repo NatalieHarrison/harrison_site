@@ -12,7 +12,7 @@ function Experience(){
               <Typography variant = "h6" align = "left" component="div" sx ={{flexGrow:1}}>
                 <ul>
                   <li>
-                    Developing  website with React, Amplify, Material UI, where users can cretae an account to view sports injury data from the last 20 years. Working with Datalys and graduates from Harvard, USC and Duke that are in the health and data field.
+                    Developing  website with React, Amplify, Material UI, where users can create an account to view sports injury data from the last 20 years. Working with Datalys and graduates from Harvard, USC and Duke that are in the health and data field.
                   </li>
                   <li>
                     Developed <a href= "www.headstogetherhealth.com"> company website </a>using Square Space  
