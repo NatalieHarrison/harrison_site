@@ -1,7 +1,0 @@
-type Reviews @model @auth(rules: [{allow: public}]) {
-  id: ID!
-  name: String
-  company: String
-  comment: String
-  date: AWSDate
-}
