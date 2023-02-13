@@ -16,7 +16,7 @@ function Footer(){
           </Typography>
         
         </Button>
-        <Button variant = "contained" href="www.linkedin.com/in/natalieharrison45"  sx = {{textTransform: 'none', backgroundColor: '#607EAA'  }}>
+        <Button variant = "contained" href="https://www.linkedin.com/in/natalieharrison45"  sx = {{textTransform: 'none', backgroundColor: '#607EAA'  }}>
           <Typography sx = {{color: '#F9F5EB'}}>
             LinkedIn
           </Typography>
