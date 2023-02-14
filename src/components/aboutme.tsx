@@ -29,7 +29,14 @@ function AboutMe(){
       <br></br>
       
       <br></br>
-      <Typography textAlign='left' sx = {{ml: '10px'}}>
+
+      <Typography textAlign='left' sx = {{ml: '10px'}}> 
+      <b> How did I build this website?</b>
+      <br></br>
+        Taking from the scrum methodology, I used GitHub to plan out this website. There I created a summary, a prototype, list of features I wanted to implment, the data required and more, which can be seen <a href = "https://github.com/NatalieHarrison/harrison-site"> at this link.</a> From there, I created a skeleton of the project and once I achieved the layout I wanted, I began making styling changes. I used AWS Amplify to deploy this website, React as the framework and Typescript.     
+      </Typography>
+
+      <br></br> <Typography textAlign='left' sx = {{ml: '10px'}}>
         <b> Hobbies: </b>
         <ul>
           <li>
@@ -56,12 +63,6 @@ function AboutMe(){
         </ul>
 
       </Typography>
-
-      <Typography textAlign='left' sx = {{ml: '10px'}}> 
-      <b> How did I build this website?</b>
-      
-      </Typography>
-
       
     </Box>
 
