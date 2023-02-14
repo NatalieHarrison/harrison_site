@@ -47,6 +47,12 @@ function AboutMe(){
           <li>
             Walking my dogs 
           </li>
+          <li>
+            Volunteer work 
+          </li>
+          <li>
+            Puzzles
+          </li>
         </ul>
 
       </Typography>
