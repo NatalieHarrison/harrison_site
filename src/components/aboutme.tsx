@@ -57,6 +57,11 @@ function AboutMe(){
 
       </Typography>
 
+      <Typography textAlign='left' sx = {{ml: '10px'}}> 
+      <b> How did I build this website?</b>
+      
+      </Typography>
+
       
     </Box>
 
