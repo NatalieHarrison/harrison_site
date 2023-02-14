@@ -22,9 +22,9 @@ function AboutMe(){
       <Typography textAlign='left' sx = {{ml: '10px'}}>
         <b>Why I chose computer science: </b>
         <br></br>
-        I spent my childhood a lot differently than the average child in the 2010’s. I had unlimited screen time -  the best thing ever. In 2011, I created a blog where I discovered HTML. I used HTML to design my blog. First, I used templates and then finding that the templates didn’t match my ultimate vision, I began making tiny adjustments that led to huge adjustments. 
+        In 2012, at 12 years old, I learned my first coding language, HTML. I was introduced to HTML when I created a blog and wanted to change the appearance of the blog. I started out using templates, but when the templates didn’t have exactly what I wanted, I began to make tiny adjustments that led to major adjustments. At the time, I never thought anything of it, it was just something I enjoyed doing after school. 
         <br></br>
-        Fast forward to 2019, I had began to discover my independence and began thinking about what I wanted my life’s work to look like and the impact it would have on humanity. In 2020 I was able to see the Space X launch in Cape Canaveral, Florida and this had a very impactful effect on my decision to choose computer science. I knew this was an event I wanted to be apart of one day. Not specifically Space X or space exploration, but being on a team to create technology and working hard to watch it become apart of history. 
+        In early 2020,  I was leaning into choosing computer science as my college major. I felt that computer science was extremely fascinating and a field where I could thrive and make a meaningful impact with my work. Later that year, I was able to tour the Kennedy Space Center and see the Space X launch in Cape Canaveral, Florida. During this trip, I had realized choosing computer science was exactly what I was supposed to be doing. My life goal had become to be apart of a team that works hard to build technology and watch it become apart of history. and working hard to watch it become apart of history. 
       </Typography>
       <br></br>
       
