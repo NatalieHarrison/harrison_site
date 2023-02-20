@@ -11,7 +11,7 @@ function AboutMe(){
 
 
       <Typography sx  = {{mr: '5px', ml: '5px'}}>
-        <b>Hello,  I am Natalie Harrison and welcome to NatalieHarrison.net!</b>
+        <b>Hello,  I am Natalie Harrison and welcome to NatalieHarrison.net</b>
         <br></br>
           This website serves as a place to not only showcase my work as a student of computer science, but also as a place for employers to learn more about my personality, hobbies and life outside of computer science. 
       </Typography>
