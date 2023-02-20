@@ -1,5 +1,5 @@
 import React, {useState}from "react";
-import { Box, Button, Stack, IconButton, Typography } from "@mui/material";
+import { Box, Button, Stack, IconButton, Typography, Grid } from "@mui/material";
 import { Evaluate } from "./mathComponents/Evaluate";
 import { Simplify } from "./mathComponents/Simplify";
 import { Derivative } from "./mathComponents/Derive";
@@ -59,6 +59,7 @@ function Tools() {
       <Typography variant = "h5" component="div" sx ={{flexGrow:1}}>
             Tools
           </Typography>
+        <Grid xs = {12}>
         <Stack  spacing = {20} direction = "row">
           <Evaluate></Evaluate> 
 
@@ -116,6 +117,7 @@ function Tools() {
           </ClickAwayListener> 
           </Stack>
         </Stack>
+        </Grid>
       </Box>
     </div>
   );
