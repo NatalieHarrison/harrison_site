@@ -5,7 +5,7 @@ import headshot from "./../headshot.jpeg"
 function AboutMe(){
   return(
     <Box sx = {{ml: '20px', mr: '20px'}}>
-      <Typography  variant = "h4" component="div" sx ={{flexGrow:1}}>
+      <Typography  variant = "h5" component="div" sx ={{flexGrow:1}}>
         About me
       </Typography>
 

@@ -4,18 +4,18 @@ import Typography from '@mui/material/Typography';
 function Education(){
   return (
     <Box>
-            <Typography variant = "h5" align = "left" component="div" sx ={{flexGrow:1}}>
+            <Typography variant = "h6" align = "left" component="div" sx ={{flexGrow:1}}>
             <b><u>EDUCATION</u></b>
             <br></br> <b>University of North Carolina - Wilmington | December 2022 </b>
           </Typography>
-              <Typography variant = "h6" align = "left" component="div" sx ={{flexGrow:1}}>
+              <Typography variant = "body1" align = "left" component="div" sx ={{flexGrow:1}}>
                 Related completed courses: Object Oriented Programming & Design, Introduction to Data Structures, Design & Analysis of Algorithms, Operating Systems, Database Design & Implementation
               </Typography>
             <br></br>
-          <Typography variant = "h5" align = "left" component="div" sx ={{flexGrow:1}}>
+          <Typography variant = "h6" align = "left" component="div" sx ={{flexGrow:1}}>
               <b>Sandhills Community College</b>
           </Typography>
-            <Typography variant = "h6" align = "left" component="div" sx ={{flexGrow:1}}>
+            <Typography variant = "subtitle1" align = "left" component="div" sx ={{flexGrow:1}}>
                 Associates Degree in Science
                 <br></br> GPA: 3.5
             </Typography>

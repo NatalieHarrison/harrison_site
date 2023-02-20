@@ -9,7 +9,7 @@ import Involvement from './resumeComponents/involvement';
 function Resume (){
   return(
     <Box>
-       <Typography variant = "h4" component="div" sx ={{flexGrow:1}}>
+       <Typography variant = "h5" component="div" sx ={{flexGrow:1}}>
             2023 Resume
           </Typography>
           <Education></Education>
