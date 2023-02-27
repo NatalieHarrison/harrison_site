@@ -15,12 +15,12 @@ function App() {
       <Header></Header>
       <Grid container spacing = {2} sx = {{mt: '5px'}}>
 
-        <Grid item xs = {7} md = {4} style={{maxHeight: 700, overflow: 'auto'}}> 
+        <Grid item xs = {12} md = {4} style={{maxHeight: 700, overflow: 'auto'}} > 
           <AboutMe></AboutMe>
         </Grid> 
         <Divider orientation="vertical" flexItem ></Divider>
 
-        <Grid item xs = {7} md = {7} style={{maxHeight: 700, overflow: 'auto'}}> 
+        <Grid item xs = {12} md = {7} style={{maxHeight: 700, overflow: 'auto'}} sx = {{ml: '5px'}}> 
           <Resume></Resume>
         </Grid>
 
