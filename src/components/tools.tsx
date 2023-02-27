@@ -59,64 +59,69 @@ function Tools() {
       <Typography variant = "h5" component="div" sx ={{flexGrow:1}}>
             Tools
           </Typography>
-        <Grid xs = {12}>
+        <Grid >
         <Stack  spacing = {20} direction = "row">
-          <Evaluate></Evaluate> 
+          <Grid item xs = {3}>
+            <Evaluate></Evaluate> 
+          </Grid>
 
-          <Stack direction = "row" spacing = {.5}>
-          <div> 
-          <Button variant = "outlined"
-          onClick = {simplifyClick}>Simplify</Button>
-          {showSimplify && (
+          <Grid item xs = {3}>
+            <Stack direction = "row" spacing = {.5}>
+              <div> 
+                <Button variant = "outlined"
+                onClick = {simplifyClick}>Simplify</Button>
+                {showSimplify && (
+                  <div>
+                    <Simplify></Simplify>
+                  </div>
+                )}
+
+                {showSimplify &&<Box/>}
+              </div>
+
+            <ClickAwayListener onClickAway={handleClickAway}>
+              <Box sx={{ position: 'relative' }}>
+                <IconButton type="button" onClick={handleClick}>
+                <HelpOutlineIcon></HelpOutlineIcon>
+                </IconButton>
+                {open ? (
+                  <Box sx = {styles}>
+                    Used for adding, subtracting, multiplying and dividing expressions with variables
+                  </Box>
+                ) : null}
+              </Box>
+            </ClickAwayListener>
+
+            </Stack>
+          </Grid>
+          <Grid item xs = {3}>
+            <Stack  direction = "row" spacing = {.5}>
             <div>
-              <Simplify></Simplify>
-            </div>
-          )}
-
-          {showSimplify &&<Box/>}
-          </div>
-
-          <ClickAwayListener onClickAway={handleClickAway}>
-            <Box sx={{ position: 'relative' }}>
-              <IconButton type="button" onClick={handleClick}>
-               <HelpOutlineIcon></HelpOutlineIcon>
-              </IconButton>
-              {open ? (
-                <Box sx = {styles}>
-                  Used for adding, subtracting, multiplying and dividing expressions with variables
-                </Box>
-              ) : null}
-            </Box>
-          </ClickAwayListener>
-
-          </Stack>
+            <Button variant = "outlined" onClick = {derivativeClick}>Derivative</Button>
+            <br></br>
+            {showDerivative &&(
+              <div>
+                <Derivative></Derivative>
+              </div>
+            )}
           
-          <Stack  direction = "row" spacing = {.5}>
-          <div>
-          <Button variant = "outlined" onClick = {derivativeClick}>Derivative</Button>
-          <br></br>
-          {showDerivative &&(
-            <div>
-              <Derivative></Derivative>
             </div>
-          )}
-         
-          </div>
 
-          <ClickAwayListener onClickAway={handleClickAway1}>
-            <Box sx={{ position: 'relative' }}>
-              <IconButton type="button" onClick={handleClick1}>
-               <HelpOutlineIcon></HelpOutlineIcon>
-              </IconButton>
-              {open1 ? (
-                <Box sx = {styles}>
-                  Used for solving derivatives
-                </Box>
-              ) : null}
-            </Box>
-          </ClickAwayListener> 
+            <ClickAwayListener onClickAway={handleClickAway1}>
+              <Box sx={{ position: 'relative' }}>
+                <IconButton type="button" onClick={handleClick1}>
+                <HelpOutlineIcon></HelpOutlineIcon>
+                </IconButton>
+                {open1 ? (
+                  <Box sx = {styles}>
+                    Used for solving derivatives
+                  </Box>
+                ) : null}
+              </Box>
+            </ClickAwayListener> 
+            </Stack>
+          </Grid>
           </Stack>
-        </Stack>
         </Grid>
       </Box>
     </div>
