@@ -20,7 +20,7 @@ function App() {
         </Grid> 
         <Divider orientation="vertical" flexItem ></Divider>
 
-        <Grid item xs = {8} md = {7} style={{maxHeight: 700, overflow: 'auto'}}> 
+        <Grid item xs = {7} md = {7} style={{maxHeight: 700, overflow: 'auto'}}> 
           <Resume></Resume>
         </Grid>
 
