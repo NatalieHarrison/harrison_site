@@ -59,14 +59,10 @@ function Tools() {
       <Typography variant = "h5" component="div" sx ={{flexGrow:1}}>
             Tools
           </Typography>
-        <Grid >
-       
-          <Grid item xs = {3}>
+   
             <Evaluate></Evaluate> 
-          </Grid>
-
-          <Grid item xs = {3}>
-            <Stack direction = "row" spacing = {.5}>
+      
+            <Stack direction = "row" spacing = {.5} sx = {{mt: '10px'}}>
               <div> 
                 <Button variant = "outlined"
                 onClick = {simplifyClick}>Simplify</Button>
@@ -93,9 +89,9 @@ function Tools() {
             </ClickAwayListener>
 
             </Stack>
-          </Grid>
-          <Grid item xs = {3}>
-            <Stack  direction = "row" spacing = {.5}>
+        
+        
+            <Stack  direction = "row" spacing = {.5}  sx = {{mt: '10px'}}>
             <div>
             <Button variant = "outlined" onClick = {derivativeClick}>Derivative</Button>
             <br></br>
@@ -120,9 +116,9 @@ function Tools() {
               </Box>
             </ClickAwayListener> 
             </Stack>
-          </Grid>
+   
         
-        </Grid>
+    
       </Box>
     </div>
   );
