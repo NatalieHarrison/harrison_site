@@ -60,7 +60,7 @@ function Tools() {
             Tools
           </Typography>
         <Grid >
-        <Stack  spacing = {20} direction = "row">
+       
           <Grid item xs = {3}>
             <Evaluate></Evaluate> 
           </Grid>
@@ -121,7 +121,7 @@ function Tools() {
             </ClickAwayListener> 
             </Stack>
           </Grid>
-          </Stack>
+        
         </Grid>
       </Box>
     </div>
