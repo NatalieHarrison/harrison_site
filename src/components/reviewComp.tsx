@@ -15,20 +15,7 @@ import {
 function ReviewComp(){
   return(
     <Box>
-      <ReviewsCreateForm
-    onSubmit={(fields) => {
-        // Example function to trim all string inputs
-        const updatedFields = {}
-        Object.keys(fields).forEach(key => {
-            if (typeof fields[key] === 'string') {
-                updatedFields[key] = fields[key].trim()
-            } else {
-                updatedFields[key] = fields[key]
-            }
-        })
-        return updatedFields
-    }}
-/>
+      <ReviewsCreateForm/>
       
     </Box>
 
