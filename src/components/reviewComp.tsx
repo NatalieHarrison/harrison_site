@@ -7,32 +7,29 @@ import { Container } from '@mui/system';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid'; 
-
-
-
+import {
+  ReviewsCreateForm 
+ } from '../ui-components';
 
 
 function ReviewComp(){
   return(
     <Box>
-      <Grid container spacing={2}>
-        <Grid xs = {6}>
-          <Container>
-            <Stack  direction="row" justifyContent="flex-start" alignItems="center" spacing={2} sx = {{mb: 1}}>
-
-              <Typography> </Typography>
-
-            </Stack>
-            <Stack  direction="row" justifyContent="flex-start" alignItems="center" spacing={2}>
-              <TextField id="outlined-basic" label="Share details of your experience with Natalie"  multiline rows = {5} variant="outlined" sx = {{width: 500}} />
-              <Button variant = "contained">Submit</Button>
-            </Stack>
-          </Container>
-      </Grid>
-
-      <Grid xs = {6}>
-      </Grid>
-      </Grid>
+      <ReviewsCreateForm
+    onSubmit={(fields) => {
+        // Example function to trim all string inputs
+        const updatedFields = {}
+        Object.keys(fields).forEach(key => {
+            if (typeof fields[key] === 'string') {
+                updatedFields[key] = fields[key].trim()
+            } else {
+                updatedFields[key] = fields[key]
+            }
+        })
+        return updatedFields
+    }}
+/>
+      
     </Box>
 
 
