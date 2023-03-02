@@ -16,13 +16,11 @@ export declare type ReviewsCreateFormInputValues = {
     name?: string;
     company?: string;
     comment?: string;
-    date?: string;
 };
 export declare type ReviewsCreateFormValidationValues = {
     name?: ValidationFunction<string>;
     company?: ValidationFunction<string>;
     comment?: ValidationFunction<string>;
-    date?: ValidationFunction<string>;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type ReviewsCreateFormOverridesProps = {
@@ -31,7 +29,6 @@ export declare type ReviewsCreateFormOverridesProps = {
     name?: PrimitiveOverrideProps<TextFieldProps>;
     company?: PrimitiveOverrideProps<TextFieldProps>;
     comment?: PrimitiveOverrideProps<TextFieldProps>;
-    date?: PrimitiveOverrideProps<TextFieldProps>;
 } & EscapeHatchProps;
 export declare type ReviewsCreateFormProps = React.PropsWithChildren<{
     overrides?: ReviewsCreateFormOverridesProps | undefined | null;

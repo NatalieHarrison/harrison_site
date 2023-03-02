@@ -27,25 +27,21 @@ export default function ReviewsCreateForm(props) {
     name: "",
     company: "",
     comment: "",
-    date: "",
   };
   const [name, setName] = React.useState(initialValues.name);
   const [company, setCompany] = React.useState(initialValues.company);
   const [comment, setComment] = React.useState(initialValues.comment);
-  const [date, setDate] = React.useState(initialValues.date);
   const [errors, setErrors] = React.useState({});
   const resetStateValues = () => {
     setName(initialValues.name);
     setCompany(initialValues.company);
     setComment(initialValues.comment);
-    setDate(initialValues.date);
     setErrors({});
   };
   const validations = {
     name: [{ type: "Required" }],
     company: [],
     comment: [{ type: "Required" }],
-    date: [],
   };
   const runValidationTasks = async (
     fieldName,
@@ -76,7 +72,6 @@ export default function ReviewsCreateForm(props) {
           name,
           company,
           comment,
-          date,
         };
         const validationResponses = await Promise.all(
           Object.keys(validations).reduce((promises, fieldName) => {
@@ -106,12 +101,7 @@ export default function ReviewsCreateForm(props) {
               modelFields[key] = undefined;
             }
           });
-          const modelFieldsToSave = {
-            name: modelFields.name,
-            company: modelFields.company,
-            comment: modelFields.comment,
-          };
-          await DataStore.save(new Reviews(modelFieldsToSave));
+          await DataStore.save(new Reviews(modelFields));
           if (onSuccess) {
             onSuccess(modelFields);
           }
@@ -145,7 +135,6 @@ export default function ReviewsCreateForm(props) {
                 name: value,
                 company,
                 comment,
-                date,
               };
               const result = onChange(modelFields);
               value = result?.name ?? value;
@@ -172,7 +161,6 @@ export default function ReviewsCreateForm(props) {
                 name,
                 company: value,
                 comment,
-                date,
               };
               const result = onChange(modelFields);
               value = result?.company ?? value;
@@ -200,7 +188,6 @@ export default function ReviewsCreateForm(props) {
               name,
               company,
               comment: value,
-              date,
             };
             const result = onChange(modelFields);
             value = result?.comment ?? value;
@@ -214,31 +201,6 @@ export default function ReviewsCreateForm(props) {
         errorMessage={errors.comment?.errorMessage}
         hasError={errors.comment?.hasError}
         {...getOverrideProps(overrides, "comment")}
-      ></TextField>
-      <TextField
-        label="Label"
-        value={date}
-        onChange={(e) => {
-          let { value } = e.target;
-          if (onChange) {
-            const modelFields = {
-              name,
-              company,
-              comment,
-              date: value,
-            };
-            const result = onChange(modelFields);
-            value = result?.date ?? value;
-          }
-          if (errors.date?.hasError) {
-            runValidationTasks("date", value);
-          }
-          setDate(value);
-        }}
-        onBlur={() => runValidationTasks("date", date)}
-        errorMessage={errors.date?.errorMessage}
-        hasError={errors.date?.hasError}
-        {...getOverrideProps(overrides, "date")}
       ></TextField>
       <Flex
         justifyContent="space-between"
