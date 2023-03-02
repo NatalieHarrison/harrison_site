@@ -7,11 +7,13 @@ import AboutMe from './components/aboutme';
 import Resume from './components/resume';
 import Tools from './components/tools';
 import Footer from './components/footer';
+import Ptimer from './components/pomodoro/ptimer';
 
 
 function App() {
   return (
     <div className="App">
+      <Ptimer></Ptimer>
       <Header></Header>
       <Grid container spacing = {2} sx = {{mt: '5px'}}>
 
