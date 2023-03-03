@@ -1,21 +1,31 @@
-import { DataStore } from '@aws-amplify/datastore';
 
-import { Typography } from '@mui/material';
-import TextField from '@mui/material/TextField';
+import { Button } from '@mui/material';
 import Box from '@mui/material/Box';
-import { Container } from '@mui/system';
-import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
-import Grid from '@mui/material/Grid'; 
-import {
-  ReviewsCreateForm 
- } from '../ui-components';
-
+import {API, graphqlOperation} from 'aws-amplify'
+import React, {Component} from 'react';
 
 function ReviewComp(){
-  return(
+  // const handleSubmit =async (e) => {
+  //   e.preventDefault()
+  //   const {target} = e
+  //   try{
+  //     await API.graphql({
+  //       query: createReview
+  //     })
+  //   }
+    
+  // }
+
+ 
+   return(
     <Box>
-      <ReviewsCreateForm/>
+      <form >
+        <input placeholder='Name' name = "name"/>
+        <input placeholder='Company' name ="company"/>
+        <input placeholder='Comment' name ="comment"/>
+        <Button variant = "contained">Submit</Button>
+      </form>
+      
       
     </Box>
 
