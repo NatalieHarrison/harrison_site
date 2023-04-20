@@ -10,10 +10,10 @@ function Skills(){
             <Typography variant = "subtitle1" align = "left" component="div" sx ={{flexGrow:1}}> 
             <ul>
               <li>
-                Programming Languages: Java, JavaScript, TypeScript, Python, C++, Jinja, HTML, CSS
+                Programming Languages: JavaScript, TypeScript, Python, Java, C++, HTML, CSS, Jinja
               </li>
               <li>
-                Libraries: Material UI, react, Amplify, MathJS
+                Libraries: Material UI, React, Amplify, MathJS
               </li>
               <li>
                 Framework: React, Flask
