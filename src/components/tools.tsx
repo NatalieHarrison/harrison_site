@@ -10,6 +10,7 @@ import ClickAwayListener from '@mui/material/ClickAwayListener';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import { SxProps } from '@mui/system';
 import { SymbolKeyboard } from "./mathComponents/SymbolKeyboard";
+import TimerTool from "./timer/timerTool";
 
 
 function Tools() {
@@ -116,7 +117,7 @@ function Tools() {
               </Box>
             </ClickAwayListener> 
             </Stack>
-   
+            <TimerTool></TimerTool>
         
     
       </Box>
