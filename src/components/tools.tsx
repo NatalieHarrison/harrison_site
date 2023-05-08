@@ -117,7 +117,7 @@ function Tools() {
               </Box>
             </ClickAwayListener> 
             </Stack>
-            <TimerTool hours = {0} minutes = {1} seconds = {40}></TimerTool>
+            <TimerTool ></TimerTool>
         
     
       </Box>
