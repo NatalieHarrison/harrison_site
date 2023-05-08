@@ -6,17 +6,23 @@ import CountDownTimer from './countDownTimer';
 
 const TimerTool = () => {
 
+  
   let [hrsInput, setHrsInput] = useState("");
   let [minsInput, setMinsInput] = useState("");
   let [startTimer, setTimer] = useState(false);
+  let [resetTimer, setResetTimer] = useState(false);
+  let [buttonHide, setButtonHide] = useState(false);
+
 
   const startTimerClick = () => {
-    setTimer(current => !current)
+    setTimer(current => !current) //displays the timer and hides it when button clicks 
+    // setResetTimer (current => !current)
   }
+
   return(
     <Box>
 
-
+  
       <Stack direction = "row" spacing={2} >
 
       <TextField id="outlined-basic" label="Hours" variant="outlined" sx = {{width: '60px'}} value={hrsInput} onChange={(e) => setHrsInput(e.target.value)}/>
@@ -33,7 +39,7 @@ const TimerTool = () => {
           <CountDownTimer hours = {parseInt(hrsInput)} minutes = {parseInt(minsInput)} seconds = {0}></CountDownTimer>
         </div>
       )}
-      {/* <CountDownTimer hours = {parseInt(hrsInput)} minutes = {parseInt(minsInput)} seconds = {0}></CountDownTimer> */}
+
 
       </Stack>
     </Box>

@@ -10,8 +10,7 @@ interface ICountdown{
 }
 const CountDownTimer = ({ hours = 0, minutes = 0, seconds = 60}:ICountdown) => {
   const [time, setTime] = React.useState<ICountdown>({hours,minutes,seconds});
-  const [hrsInput, setHrsInput] = useState("");
-  const [minsInput, setMinsInput] = useState("");
+
   
   const tick = () => {
     if (time.hours === 0 && time.minutes === 0 && time.seconds === 0)
@@ -31,7 +30,6 @@ const CountDownTimer = ({ hours = 0, minutes = 0, seconds = 60}:ICountdown) => {
     const timerId = setInterval (() => tick(), 1000)
     return () => clearInterval(timerId)
   })
-
 
   return(
     <Box>
