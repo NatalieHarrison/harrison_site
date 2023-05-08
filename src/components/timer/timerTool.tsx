@@ -4,14 +4,11 @@ import Stack from '@mui/material/Stack';
 import React, {useState} from 'react'
 import CountDownTimer from './countDownTimer';
 
-const TimerTool = () => {
-
-  
+const TimerTool = () => {  
   let [hrsInput, setHrsInput] = useState("");
   let [minsInput, setMinsInput] = useState("");
   let [startTimer, setTimer] = useState(false);
-  let [resetTimer, setResetTimer] = useState(false);
-  let [buttonHide, setButtonHide] = useState(false);
+
 
 
   const startTimerClick = () => {
@@ -21,19 +18,17 @@ const TimerTool = () => {
 
   return(
     <Box>
-
-  
       <Stack direction = "row" spacing={2} >
 
       <TextField id="outlined-basic" label="Hours" variant="outlined" sx = {{width: '60px'}} value={hrsInput} onChange={(e) => setHrsInput(e.target.value)}/>
       <TextField id="outlined-basic" label="Mins" variant="outlined" sx = {{width: '60px'}} value={minsInput} onChange={(e) => setMinsInput(e.target.value)} />
 
-
       <Button
        variant="contained" 
        onClick = {startTimerClick}>
-        Start Timer
+        Set/Reset Timer
       </Button>
+
       {startTimer && (
         <div>
           <CountDownTimer hours = {parseInt(hrsInput)} minutes = {parseInt(minsInput)} seconds = {0}></CountDownTimer>
