@@ -20,8 +20,8 @@ const TimerTool = () => {
     <Box>
       <Stack direction = "row" spacing={2} >
 
-      <TextField id="outlined-basic" label="Hours" variant="outlined" sx = {{width: '60px'}} value={hrsInput} onChange={(e) => setHrsInput(e.target.value)}/>
-      <TextField id="outlined-basic" label="Mins" variant="outlined" sx = {{width: '60px'}} value={minsInput} onChange={(e) => setMinsInput(e.target.value)} />
+      <TextField id="outlined-number" label="Hours" InputLabelProps={{shrink: true, }} variant="outlined" sx = {{width: '60px'}} value={hrsInput} onChange={(e) => setHrsInput(e.target.value)}/>
+      <TextField id="outlined-number" label="Mins"  InputLabelProps={{shrink: true,}} variant="outlined" sx = {{width: '60px'}} value={minsInput} onChange={(e) => setMinsInput(e.target.value)} />
 
       <Button
        variant="contained" 
