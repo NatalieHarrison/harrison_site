@@ -1,5 +1,5 @@
 import React, {useState}from "react";
-import { Box, Button, Stack, IconButton, Typography } from "@mui/material";
+import { Box, Button, Stack, IconButton, Typography, Grid } from "@mui/material";
 import { Evaluate } from "./mathComponents/Evaluate";
 import { Simplify } from "./mathComponents/Simplify";
 import { Derivative } from "./mathComponents/Derive";
@@ -10,6 +10,7 @@ import ClickAwayListener from '@mui/material/ClickAwayListener';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import { SxProps } from '@mui/system';
 import { SymbolKeyboard } from "./mathComponents/SymbolKeyboard";
+import TimerTool from "./timer/timerTool";
 
 
 function Tools() {
@@ -55,67 +56,71 @@ function Tools() {
   return (
     <div className="App">
 
-      <Box>
-      <Typography variant = "h4" component="div" sx ={{flexGrow:1}}>
+      <Box sx = {{ml: '20px'}}>
+      <Typography variant = "h5" component="div" sx ={{flexGrow:1}}>
             Tools
           </Typography>
-        <Stack  spacing = {100} direction = "row">
-          <Evaluate></Evaluate> 
+   
+            <Evaluate></Evaluate> 
+      
+            <Stack direction = "row" spacing = {.5} sx = {{mt: '10px'}}>
+              <div> 
+                <Button variant = "outlined"
+                onClick = {simplifyClick}>Simplify</Button>
+                {showSimplify && (
+                  <div>
+                    <Simplify></Simplify>
+                  </div>
+                )}
 
-          <Stack direction = "row" spacing = {.5}>
-          <div> 
-          <Button variant = "outlined"
-          onClick = {simplifyClick}>Simplify</Button>
-          {showSimplify && (
+                {showSimplify &&<Box/>}
+              </div>
+
+            <ClickAwayListener onClickAway={handleClickAway}>
+              <Box sx={{ position: 'relative' }}>
+                <IconButton type="button" onClick={handleClick}>
+                <HelpOutlineIcon></HelpOutlineIcon>
+                </IconButton>
+                {open ? (
+                  <Box sx = {styles}>
+                    Used for adding, subtracting, multiplying and dividing expressions with variables
+                  </Box>
+                ) : null}
+              </Box>
+            </ClickAwayListener>
+
+            </Stack>
+        
+        
+            <Stack  direction = "row" spacing = {.5}  sx = {{mt: '10px', mb: '10px'}}>
             <div>
-              <Simplify></Simplify>
-            </div>
-          )}
-
-          {showSimplify &&<Box/>}
-          </div>
-
-          <ClickAwayListener onClickAway={handleClickAway}>
-            <Box sx={{ position: 'relative' }}>
-              <IconButton type="button" onClick={handleClick}>
-               <HelpOutlineIcon></HelpOutlineIcon>
-              </IconButton>
-              {open ? (
-                <Box sx = {styles}>
-                  Used for adding, subtracting, multiplying and dividing expressions with variables
-                </Box>
-              ) : null}
-            </Box>
-          </ClickAwayListener>
-
-          </Stack>
+            <Button variant = "outlined" onClick = {derivativeClick}>Derivative</Button>
+            <br></br>
+            {showDerivative &&(
+              <div>
+                <Derivative></Derivative>
+              </div>
+            )}
           
-          <Stack  direction = "row" spacing = {.5}>
-          <div>
-          <Button variant = "outlined" onClick = {derivativeClick}>Derivative</Button>
-          <br></br>
-          {showDerivative &&(
-            <div>
-              <Derivative></Derivative>
             </div>
-          )}
-         
-          </div>
 
-          <ClickAwayListener onClickAway={handleClickAway1}>
-            <Box sx={{ position: 'relative' }}>
-              <IconButton type="button" onClick={handleClick1}>
-               <HelpOutlineIcon></HelpOutlineIcon>
-              </IconButton>
-              {open1 ? (
-                <Box sx = {styles}>
-                  Used for solving derivatives
-                </Box>
-              ) : null}
-            </Box>
-          </ClickAwayListener> 
-          </Stack>
-        </Stack>
+            <ClickAwayListener onClickAway={handleClickAway1}>
+              <Box sx={{ position: 'relative' }}>
+                <IconButton type="button" onClick={handleClick1}>
+                <HelpOutlineIcon></HelpOutlineIcon>
+                </IconButton>
+                {open1 ? (
+                  <Box sx = {styles}>
+                    Used for solving derivatives
+                  </Box>
+                ) : null}
+              </Box>
+            </ClickAwayListener> 
+            </Stack>
+
+            <TimerTool ></TimerTool>
+        
+    
       </Box>
     </div>
   );
