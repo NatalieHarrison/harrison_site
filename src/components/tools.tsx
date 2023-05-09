@@ -92,7 +92,7 @@ function Tools() {
             </Stack>
         
         
-            <Stack  direction = "row" spacing = {.5}  sx = {{mt: '10px'}}>
+            <Stack  direction = "row" spacing = {.5}  sx = {{mt: '10px', mb: '10px'}}>
             <div>
             <Button variant = "outlined" onClick = {derivativeClick}>Derivative</Button>
             <br></br>
@@ -117,7 +117,8 @@ function Tools() {
               </Box>
             </ClickAwayListener> 
             </Stack>
-            <TimerTool></TimerTool>
+
+            <TimerTool ></TimerTool>
         
     
       </Box>
