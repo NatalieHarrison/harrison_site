@@ -21,10 +21,10 @@ function Tools() {
           </Stack>
 
           <Stack direction = "column" spacing = {2}>
-            <Typography variant = "h6">
+            {/* <Typography variant = "h6">
               Countdown Timer
-            </Typography>
-            <TimerTool/>
+            </Typography> */}
+            {/* <TimerTool/> */}
           </Stack>
           
         </Stack>
