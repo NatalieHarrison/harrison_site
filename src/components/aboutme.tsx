@@ -5,7 +5,7 @@ import headshot from "./../headshot.jpeg"
 function AboutMe(){
   return(
     <div>
-      <Container sx = {{backgroundColor: '#E49273', height: '150px', mt: '20px'}}> 
+      <Container sx = {{backgroundColor: '#ED6A5A', height: '150px', mt: '20px',p:1, borderRadius: 1}}> 
         <Typography variant = 'h4' align='center' sx = {{color: 'white'}}>
           About Me
         </Typography>
@@ -18,25 +18,29 @@ function AboutMe(){
       
       </Container>
     
-    <Box sx = {{ml: '20px', mr: '20px'}}>
+    <Box sx = {{mt: '10px',ml: '20px', mr: '20px', backgroundColor: '#F4F1BB', width: '60%', height: '210px', p: 1 ,borderRadius: 1}}>
 
-      <Typography textAlign='left' sx = {{ml: '10px'}}>
+      <Typography textAlign='left' sx = {{ml: '30px', mr: '30px'}}>
         <b>Why I chose computer science: </b>
         <br></br>
         In 2012, at 12 years old, I learned my first coding language, HTML. I was introduced to HTML when I wanted to change the appearance of a blog I was running. I started out using templates, but when the templates didn’t have exactly what I wanted, I began to make tiny adjustments that led to major adjustments. At the time, I never thought anything of it, it was just something I enjoyed doing after school. 
         <br></br>
         In early 2020,  I was leaning into choosing computer science as my college major. I felt that computer science was extremely fascinating and a field where I could thrive and make meaningful impact with my work. Later that year, I was able to tour the Kennedy Space Center and see the Space X launch in Cape Canaveral, Florida. During this trip, I had realized choosing computer science was exactly what I was supposed to be doing. My life goal had become to be apart of a team that works hard to build technology that pushes humanity forward and watch it become apart of history.
       </Typography>
-      <br></br>
+
+    </Box>
+
       
-      <br></br>
+    <Box sx = {{mt: '10px',ml: '20px', mr: '20px', backgroundColor: '#9BC1BC', width: '60%', height: '100px', display: 'flex', flexDirection: 'row-reverse', p: 1, borderRadius: 1}}>  
 
       <Typography textAlign='left' sx = {{ml: '10px'}}> 
       <b> How did I build this website?</b>
       <br></br>
         Taking from the scrum methodology, I used GitHub to plan out this website. There I created a summary, a prototype, list of features I wanted to implement, the data required and more, which can be seen <a href = "https://github.com/NatalieHarrison/harrison-site"> at this link.</a> From there, I created a skeleton of the project and once I achieved the layout I wanted, I began making styling changes. I used AWS Amplify to deploy this website and GoDaddy to obtain a domain name, React as the framework and Typescript.     
       </Typography>
+    </Box>
 
+    <Box sx = {{mt: '10px',ml: '20px', mr: '20px', backgroundColor: '#5CA4A9', width: '60%', height: '175px', display: 'flex', flexDirection: 'row-reverse', p: 1, borderRadius: 1}}>  
       <br></br> <Typography textAlign='left' sx = {{ml: '10px'}}>
         <b> Fun facts: </b>
         <ul>
@@ -54,10 +58,10 @@ function AboutMe(){
             When I am not solving coding problems, I enjoy solving puzzles.
           </li>
         </ul>
-
       </Typography>
+      </Box>
       
-    </Box>
+    
     </div>
 
 
