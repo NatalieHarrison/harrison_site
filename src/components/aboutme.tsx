@@ -4,18 +4,21 @@ import { Container, Typography } from '@mui/material';
 import headshot from "./../headshot.jpeg"
 function AboutMe(){
   return(
+    <div>
+      <Container sx = {{backgroundColor: '#E49273', height: '150px', mt: '20px'}}> 
+        <Typography variant = 'h4' align='center' sx = {{color: 'white'}}>
+          About Me
+        </Typography>
+
+        <Typography variant = 'subtitle1' align = 'center' sx  = {{mr: '160px', ml: '160px', color: 'white'}}>
+          <b>Hello,  I am Natalie Harrison and welcome to NatalieHarrison.org! </b>
+          <br></br>
+            This website serves as a place to not only showcase my work as a student of computer science, but also as a place for employers to learn more about my personality, hobbies and life outside of computer science. 
+        </Typography>
+      
+      </Container>
+    
     <Box sx = {{ml: '20px', mr: '20px'}}>
-      <Typography  variant = "h5" component="div" sx ={{flexGrow:1}}>
-        About me
-      </Typography>
-
-
-      <Typography sx  = {{mr: '5px', ml: '5px'}}>
-        <b>Hello,  I am Natalie Harrison and welcome to NatalieHarrison.org! </b>
-        <br></br>
-          This website serves as a place to not only showcase my work as a student of computer science, but also as a place for employers to learn more about my personality, hobbies and life outside of computer science. 
-      </Typography>
-        <br></br>
 
       <Typography textAlign='left' sx = {{ml: '10px'}}>
         <b>Why I chose computer science: </b>
@@ -55,6 +58,7 @@ function AboutMe(){
       </Typography>
       
     </Box>
+    </div>
 
 
   )
