@@ -8,7 +8,7 @@ import Experience from './resumeComponents/experience';
 import Involvement from './resumeComponents/involvement';
 function Resume (){
   return(
-    <Box>
+    <Box mb= "110px">
        <Typography variant = "h5" component="div" sx ={{flexGrow:1}}>
             2023 Resume
           </Typography>

@@ -6,7 +6,7 @@ function Tools() {
   return (
     <div className="App">
 
-      <Box sx = {{ml: '20px'}}>
+      <Box ml = '20px' mb = '150px' >
         <Typography variant = "h5" component="div" sx ={{flexGrow:1}}>
             Tools
         </Typography>

@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 function Footer(){
 
   return(
-    <Box sx = {{ backgroundColor: '#1C3879', height: '100px'}} >
+    <Box sx = {{ backgroundColor: '#1C3879', height: '100px', width: '100%'}} position={'fixed'} bottom={0} >
         <Typography variant = "h5" sx = {{color: '#F9F5EB'}}>
             Links
         </Typography>
