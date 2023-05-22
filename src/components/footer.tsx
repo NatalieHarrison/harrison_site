@@ -6,7 +6,7 @@ function Footer(){
 
   return(
     <Box sx = {{ backgroundColor: '#1C3879', height: '100px', width: '100%'}} position={'fixed'} bottom={0} >
-        <Typography variant = "h5" sx = {{color: '#F9F5EB'}}>
+        <Typography variant = "h5" align = 'center' sx = {{color: '#F9F5EB'}}>
             Links
         </Typography>
       <Stack  direction="row" justifyContent="space-evenly" alignItems="center" spacing={2}>
