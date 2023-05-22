@@ -1,4 +1,4 @@
-import { Box, Stack, Typography} from "@mui/material";
+import { Box, Container, Stack, Typography} from "@mui/material";
 import TimerTool from "./timer/timerTool";
 import DisplayCalculator from "./mathComponents/displayCalculator";
 
@@ -7,9 +7,11 @@ function Tools() {
     <div className="App">
 
       <Box ml = '20px' mb = '150px' mt = '20px' >
-        <Typography variant = "h5" component="div" sx ={{flexGrow:1}}>
-            Tools
-        </Typography>
+        <Container sx = {{backgroundColor: '#ED6A5A',p:1, borderRadius: 1}}>
+          <Typography variant = 'h4' align='center' sx = {{color: 'white'}}>
+              Tools
+          </Typography>
+        </Container>
 
         <Stack direction = "row" spacing ={10}>
 
