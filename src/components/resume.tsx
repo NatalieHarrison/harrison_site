@@ -8,20 +8,22 @@ import Experience from './resumeComponents/experience';
 import Involvement from './resumeComponents/involvement';
 function Resume (){
   return(
-    <Box mb= "110px">
-      <Container sx = {{backgroundColor: '#ED6A5A', mt: '20px', mb: '20px',p:1, borderRadius: 1}}>
-      <Typography variant = 'h4' align='center' sx = {{color: 'white'}}>
-            2023 Resume
-          </Typography>
-      </Container>
-      <Container>
-      
+    <Box sx = {{backgroundColor: '#F4F1BB'}}>
+      <Container sx = {{backgroundColor:'white'}}>
+
+        <Container sx = {{backgroundColor: '#ED6A5A',p:1, borderRadius: 1}}>
+          <Typography variant = 'h4' align='center' sx = {{color: 'white'}}>
+                2023 Resume
+              </Typography>
+        </Container>
+
           <Education></Education>
           <Skills></Skills>
           <Projects></Projects>
           <Experience></Experience>
           <Involvement></Involvement>
-          </Container>
+
+      </Container>
 
     </Box>
 

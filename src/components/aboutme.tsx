@@ -5,7 +5,6 @@ import headshot from "./../headshot.jpeg"
 import Grid from '@mui/material/Grid';
 function AboutMe(){
   return(
-    <div>
       <Box>
       <Container sx = {{backgroundColor: '#ED6A5A', mt: '20px', mb: '20px',p:1, borderRadius: 1}}> 
         <Typography variant = 'h4' align='center' sx = {{color: 'white'}}>
@@ -43,7 +42,7 @@ function AboutMe(){
         </Typography>
       </Grid>
 
-      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px',mb: '20px', backgroundColor: '#5CA4A9', display: 'flex', flexDirection: 'row-reverse', p: 1, borderRadius: 1}}>  
+      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px',mb: '10px', backgroundColor: '#5CA4A9', display: 'flex', flexDirection: 'row-reverse', p: 1, borderRadius: 1}}>  
         <br></br> <Typography textAlign='left' sx = {{ml: '10px'}}>
           <b> Fun facts: </b>
           <ul>
@@ -68,7 +67,7 @@ function AboutMe(){
       
       </Box>
     
-    </div>
+
 
 
   )
