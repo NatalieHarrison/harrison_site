@@ -13,14 +13,15 @@ function Resume (){
       <Typography variant = 'h4' align='center' sx = {{color: 'white'}}>
             2023 Resume
           </Typography>
-
       </Container>
+      <Container>
       
           <Education></Education>
           <Skills></Skills>
           <Projects></Projects>
           <Experience></Experience>
           <Involvement></Involvement>
+          </Container>
 
     </Box>
 
