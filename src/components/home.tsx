@@ -16,9 +16,8 @@ function Home(){
 
       <Resume></Resume>
 
-
- 
       <Divider  flexItem sx = {{mt: '10px', mb: '25px'}}></Divider>
+      
       <Tools></Tools>
       
       <Divider  flexItem sx = {{mt: '10px'}} ></Divider>

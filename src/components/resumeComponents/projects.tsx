@@ -3,12 +3,12 @@ import Typography from '@mui/material/Typography';
 function Projects(){
   return (
     <Box>
-       <Typography variant = "h6" align = "left" component="div" sx ={{flexGrow:1}}>
+       <Typography variant = "h6" >
             <b><u>RELEVANT PROJECTS</u></b>
             <br></br> <b>Project Name</b>
           </Typography>
 
-            <Typography variant = "body1" align = "left" component="div" sx ={{flexGrow:1}}>
+            <Typography variant = "body1" >
               <ul>
                 <li>
                   DogLog (Fall 2022)
