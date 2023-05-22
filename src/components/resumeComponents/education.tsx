@@ -1,26 +1,23 @@
 
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+import { Container, Typography } from '@mui/material';
 function Education(){
   return (
     <Box>
-            <Typography variant = "h6" align = "left" component="div" sx ={{flexGrow:1}}>
+            <Typography variant = "h6"  >
             <b><u>EDUCATION</u></b>
             <br></br> <b>University of North Carolina - Wilmington | December 2023 </b>
           </Typography>
-              <Typography variant = "body1" align = "left" component="div" sx ={{flexGrow:1}}>
+              <Typography variant = "body1"  >
                 Related completed courses: Object Oriented Programming & Design, Introduction to Data Structures, Design & Analysis of Algorithms, Operating Systems, Database Design & Implementation
               </Typography>
             <br></br>
-          <Typography variant = "h6" align = "left" component="div" sx ={{flexGrow:1}}>
+          <Typography variant = "h6"  >
               <b>Sandhills Community College</b>
           </Typography>
-            <Typography variant = "subtitle1" align = "left" component="div" sx ={{flexGrow:1}}>
+            <Typography variant = "subtitle1" >
                 Associates Degree in Science
-                <br></br> GPA: 3.5
             </Typography>
-
-
     </Box>
   )
 }
