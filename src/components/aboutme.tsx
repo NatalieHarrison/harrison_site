@@ -21,7 +21,7 @@ function AboutMe(){
       </Container>
     
     <Grid container spacing={2}>
-      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '20px', mr: '20px', backgroundColor: '#F4F1BB', width: '60%', p: 1 ,borderRadius: 1}}>
+      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px', backgroundColor: '#F4F1BB', p: 1 ,borderRadius: 1}}>
 
         <Typography textAlign='left' sx = {{ml: '30px', mr: '30px'}}>
           <b>Why I chose computer science: </b>
@@ -34,7 +34,7 @@ function AboutMe(){
       </Grid>
 
       
-      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '20px', mr: '20px', backgroundColor: '#9BC1BC', width: '60%', display: 'flex', flexDirection: 'row-reverse', p: 1, borderRadius: 1}}>  
+      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px', backgroundColor: '#9BC1BC', justifyContent: 'flex-end',  p: 1, borderRadius: 1}}>  
 
         <Typography textAlign='left' sx = {{ml: '10px'}}> 
         <b> How did I build this website?</b>
@@ -43,7 +43,7 @@ function AboutMe(){
         </Typography>
       </Grid>
 
-      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '20px', mr: '20px', backgroundColor: '#5CA4A9', width: '60%', display: 'flex', flexDirection: 'row-reverse', p: 1, borderRadius: 1}}>  
+      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px',mb: '20px', backgroundColor: '#5CA4A9', display: 'flex', flexDirection: 'row-reverse', p: 1, borderRadius: 1}}>  
         <br></br> <Typography textAlign='left' sx = {{ml: '10px'}}>
           <b> Fun facts: </b>
           <ul>
