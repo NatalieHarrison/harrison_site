@@ -6,7 +6,7 @@ function Tools() {
   return (
     <div className="App">
 
-      <Box sx = {{ml: '20px'}}>
+      <Box ml = '20px' mb = '150px' mt = '20px' >
         <Typography variant = "h5" component="div" sx ={{flexGrow:1}}>
             Tools
         </Typography>
@@ -21,10 +21,10 @@ function Tools() {
           </Stack>
 
           <Stack direction = "column" spacing = {2}>
-            <Typography variant = "h6">
+            {/* <Typography variant = "h6">
               Countdown Timer
-            </Typography>
-            <TimerTool/>
+            </Typography> */}
+            {/* <TimerTool/> */}
           </Stack>
           
         </Stack>

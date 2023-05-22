@@ -1,7 +1,9 @@
-import React from 'react';
+import ReactDOM from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
-import './App.css';
+import Layout from "./components/layout";
+import Home from './components/home'
 import Header from './components/header';
 import AboutMe from './components/aboutme';
 import Resume from './components/resume';
@@ -12,25 +14,20 @@ import Footer from './components/footer';
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <Grid container spacing = {2} sx = {{mt: '5px'}}>
 
-        <Grid item xs = {10} md = {4} style={{maxHeight: 700, overflow: 'auto'}} > 
-          <AboutMe></AboutMe>
-        </Grid> 
-        <Divider orientation="vertical" flexItem ></Divider>
+      <BrowserRouter>
+        <Routes>
+          <Route path= "/" element={<Layout/>}>
+            <Route index element ={<Home />} />
+            <Route path = "about" element={<AboutMe />}/>
+            <Route path = "resume" element={<Resume />}/>
+            <Route path = "tools" element={<Tools />}/>
 
-        <Grid item xs = {10} md = {7} style={{maxHeight: 700, overflow: 'auto'}} sx = {{ml: '5px'}}> 
-          <Resume></Resume>
-        </Grid>
+          </Route>
 
-      </Grid>
-      <Divider  flexItem sx = {{mt: '10px', mb: '25px'}}></Divider>
-      <Tools></Tools>
-      
-      <Divider  flexItem sx = {{mt: '10px'}} ></Divider>
-      
-      <Footer></Footer>
+        </Routes>
+      </BrowserRouter>
+  
     </div>
   );
 }
