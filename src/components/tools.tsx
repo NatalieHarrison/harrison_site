@@ -7,14 +7,14 @@ function Tools() {
     <div className="App">
 
       <Box ml = '20px' mb = '150px' mt = '20px' >
-        <Container sx = {{backgroundColor: '#ED6A5A',p:1, borderRadius: 1}}>
+      <Container sx = {{backgroundColor: '#ED6A5A',p:1, borderRadius: 1}}>
           <Typography variant = 'h4' align='center' sx = {{color: 'white'}}>
               Tools
           </Typography>
         </Container>
+      <Container sx = {{backgroundColor:'white'}}>
 
         <Stack direction = "row" spacing ={10}>
-
           <Stack direction = "column">
             <Typography variant = "h6">
               Calculator
@@ -30,6 +30,8 @@ function Tools() {
           </Stack>
           
         </Stack>
+        
+        </Container>
       </Box>
     </div>
   );
