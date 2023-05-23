@@ -14,16 +14,12 @@ const Navbar = () => {
   return (
   <Box >
       <Appbar position="static">
-      <Grid>
-        <Toolbar sx ={{backgroundColor: '#55C5D1'}}>
-            <Grid xs = {2} md = {2}>
+        <Toolbar sx ={{backgroundColor: '#55C5D1'}}>  
             <Typography variant = "h6" component="div" sx ={{ color: '#F9F5EB'}}>
               Natalie Harrison
             </Typography>
-            </Grid>
 
-            <Grid xs = {4} md = {4}>
-              <ul style={{listStyle: 'none'}}>
+            <ul style={{listStyle: 'none'}}>
               <Stack direction = "row" spacing = {3}>
                 <li>
                   <Link to= "/" style={{ textDecoration: 'none' }}>
@@ -59,40 +55,35 @@ const Navbar = () => {
                     
                     </Link>
                 </li>
-                </Stack>
-              </ul>
-              </Grid>
-              
-              <Grid xs = {4} md = {4}>
-              <Stack  direction="row"  alignItems="center"   spacing={3} sx = {{ml :'20px'}}>
-                <IconButton  href='https://github.com/NatalieHarrison' sx = {{textTransform: 'none', backgroundColor: '#4699C2' }}>
-                  <GitHubIcon/>
-                
-                </IconButton>
-                <IconButton  href="https://www.linkedin.com/in/natalieharrison45"  sx = {{textTransform: 'none', backgroundColor: '#4699C2'  }}>
-                  <LinkedInIcon/>
-                </IconButton>
-      
-
-            
-                <Typography>
-                  Personal Projects: 
-                </Typography>
-                <Button href="https://ksuid.net"  sx = {{textTransform: 'none', backgroundColor: '#4699C2'  }}>
-                  <Typography sx = {{color: '#F9F5EB'}}>
-                    KSuid
-                  </Typography>
-                </Button>
-
-                <Button  href="https://www.headstogetherhealth.com"  sx = {{textTransform: 'none', backgroundColor: '#4699C2'  }}>
-                  <Typography sx = {{color: '#F9F5EB'}}>
-                    Heads Together Health
-                  </Typography>
-                </Button>
               </Stack>
-              </Grid>
+            </ul>
+
+            <Stack  direction="row"  alignItems="center"   spacing={3} sx = {{ml :'20px'}}>
+              <IconButton  href='https://github.com/NatalieHarrison' sx = {{textTransform: 'none', backgroundColor: '#4699C2' }}>
+                <GitHubIcon/>
+              </IconButton>
+
+              <IconButton  href="https://www.linkedin.com/in/natalieharrison45"  sx = {{textTransform: 'none', backgroundColor: '#4699C2'  }}>
+                <LinkedInIcon/>
+              </IconButton>
+
+              <Typography>
+                Personal Projects: 
+              </Typography>
+
+              <Button href="https://ksuid.net"  sx = {{textTransform: 'none', backgroundColor: '#4699C2'  }}>
+                <Typography sx = {{color: '#F9F5EB'}}>
+                  KSuid
+                </Typography>
+              </Button>
+
+              <Button  href="https://www.headstogetherhealth.com"  sx = {{textTransform: 'none', backgroundColor: '#4699C2'  }}>
+                <Typography sx = {{color: '#F9F5EB'}}>
+                  Heads Together Health
+                </Typography>
+              </Button>
+            </Stack>
         </Toolbar>
-        </Grid>
       </Appbar>
     </Box>
   );
