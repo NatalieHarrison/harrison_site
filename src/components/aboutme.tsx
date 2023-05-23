@@ -5,8 +5,8 @@ import headshot from "./../headshot.jpeg"
 import Grid from '@mui/material/Grid';
 function AboutMe(){
   return(
-      <Box>
-      <Container sx = {{backgroundColor: '#ED6A5A', mt: '20px', mb: '20px',p:1, borderRadius: 1}}> 
+      <Box sx = {{mt: '20px'}}>
+      <Container sx = {{backgroundColor: '#ED6A5A', mb: '20px',p:1, borderRadius: 1}}> 
         <Typography variant = 'h4' align='center' sx = {{color: 'white'}}>
           About Me
         </Typography>
@@ -33,17 +33,17 @@ function AboutMe(){
       </Grid>
 
       
-      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px', backgroundColor: '#9BC1BC', justifyContent: 'flex-end',  p: 1, borderRadius: 1}}>  
+      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px', backgroundColor: '#55C5D1'  ,p: 1 ,borderRadius: 1}}>  
 
-        <Typography textAlign='left' sx = {{ml: '10px'}}> 
+        <Typography textAlign='left' sx = {{ml: '10px',mb: '10px', mr: '30px'}}> 
         <b> How did I build this website?</b>
         <br></br>
           Taking from the scrum methodology, I used GitHub to plan out this website. There I created a summary, a prototype, list of features I wanted to implement, the data required and more, which can be seen <a href = "https://github.com/NatalieHarrison/harrison-site"> at this link.</a> From there, I created a skeleton of the project and once I achieved the layout I wanted, I began making styling changes. I used AWS Amplify to deploy this website and GoDaddy to obtain a domain name, React as the framework and Typescript.     
         </Typography>
       </Grid>
 
-      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px',mb: '10px', backgroundColor: '#5CA4A9', display: 'flex', flexDirection: 'row-reverse', p: 1, borderRadius: 1}}>  
-        <br></br> <Typography textAlign='left' sx = {{ml: '10px'}}>
+      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px',mb: '10px', backgroundColor: '#F4F1BB', display: 'flex', p: 1, borderRadius: 1}}>  
+        <br></br> <Typography textAlign='left' sx = {{ml: '10px', mr: '30px'}}>
           <b> Fun facts: </b>
           <ul>
             <li>
