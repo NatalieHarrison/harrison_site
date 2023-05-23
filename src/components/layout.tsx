@@ -7,7 +7,7 @@ import { Box } from "@mui/material";
 const Layout = () => {
   return(
     <>
-    <Box sx = {{backgroundColor: '#8ADFE3',  mt: '10px'}}>
+    <Box sx = {{backgroundColor: '#D4FAFC',  mt: '10px'}}>
       
     
     <Navbar/>

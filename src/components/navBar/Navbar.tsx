@@ -70,7 +70,7 @@ const Navbar = () => {
               </IconButton>
 
               <Typography>
-                Personal Projects: 
+                Projects: 
               </Typography>
 
               <Button href="https://ksuid.net"  sx = {{textTransform: 'none', backgroundColor: '#4699C2'  }}>
