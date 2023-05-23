@@ -8,7 +8,7 @@ import Experience from './resumeComponents/experience';
 import Involvement from './resumeComponents/involvement';
 function Resume (){
   return(
-    <Box sx = {{backgroundColor: '#F4F1BB'}}>
+    <Box >
       <Container sx = {{backgroundColor:'white'}}>
 
         <Container sx = {{backgroundColor: '#ED6A5A',p:1, borderRadius: 1}}>
