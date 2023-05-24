@@ -19,8 +19,8 @@ function AboutMe(){
       
       </Container>
     
-    <Grid container spacing={2}>
-      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px', backgroundColor: '#55C5D1', p: 1 ,borderRadius: 1}}>
+    <Grid container direction="row" justifyContent="center" alignItems="center" >
+      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px', backgroundColor: 'white', p: 1 ,borderRadius: 1}}>
 
         <Typography textAlign='center' sx = {{ml: '30px', mr: '30px', color: 'black'}}>
           <b>Why I chose computer science: </b>
@@ -33,7 +33,7 @@ function AboutMe(){
       </Grid>
 
       
-      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px', backgroundColor: '#55C5D1'  ,p: 1 ,borderRadius: 1}}>  
+      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px', backgroundColor: 'white'  ,p: 1 ,borderRadius: 1}}>  
 
         <Typography textAlign='center' sx = {{ml: '10px',mb: '10px', mr: '30px', color: 'black'}}> 
         <b> How did I build this website?</b>
@@ -42,7 +42,7 @@ function AboutMe(){
         </Typography>
       </Grid>
 
-      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px',mb: '10px', backgroundColor: '#55C5D1', display: 'flex', p: 1, borderRadius: 1}}>  
+      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px',mb: '10px', backgroundColor: 'white', display: 'flex', p: 1, borderRadius: 1}}>  
         <br></br> <Typography textAlign='left' sx = {{ml: '10px', mr: '30px', color: 'black'}}>
           <b> Fun facts: </b>
           <ul>
