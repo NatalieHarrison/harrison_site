@@ -22,7 +22,7 @@ const Navbar = () => {
 
     
       <Grid xs ={2} md = {4}>
-        <Stack direction = "row" spacing = {2} ml = "20px"> 
+        <Stack direction = "row" spacing = {2}> 
                 <Button variant="text" sx = {{textTransform: 'none'}}>
                   <Link to= "/" style={{ textDecoration: 'none' }}>
                     <Typography variant = "subtitle1" component="div" sx ={{ color: '#F9F5EB'}}>
