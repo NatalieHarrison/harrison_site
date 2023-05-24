@@ -22,7 +22,7 @@ function AboutMe(){
     <Grid container spacing={2}>
       <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px', backgroundColor: '#55C5D1', p: 1 ,borderRadius: 1}}>
 
-        <Typography textAlign='center' sx = {{ml: '30px', mr: '30px', color: 'white'}}>
+        <Typography textAlign='center' sx = {{ml: '30px', mr: '30px', color: 'black'}}>
           <b>Why I chose computer science: </b>
           <br></br>
           In 2012, at 12 years old, I learned my first coding language, HTML. I was introduced to HTML when I wanted to change the appearance of a blog I was running. I started out using templates, but when the templates didn’t have exactly what I wanted, I began to make tiny adjustments that led to major adjustments. At the time, I never thought anything of it, it was just something I enjoyed doing after school. 
@@ -35,7 +35,7 @@ function AboutMe(){
       
       <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px', backgroundColor: '#55C5D1'  ,p: 1 ,borderRadius: 1}}>  
 
-        <Typography textAlign='center' sx = {{ml: '10px',mb: '10px', mr: '30px', color: 'white'}}> 
+        <Typography textAlign='center' sx = {{ml: '10px',mb: '10px', mr: '30px', color: 'black'}}> 
         <b> How did I build this website?</b>
         <br></br>
           Taking from the scrum methodology, I used GitHub to plan out this website. There I created a summary, a prototype, list of features I wanted to implement, the data required and more, which can be seen <a href = "https://github.com/NatalieHarrison/harrison-site"> at this link.</a> From there, I created a skeleton of the project and once I achieved the layout I wanted, I began making styling changes. I used AWS Amplify to deploy this website and GoDaddy to obtain a domain name, React as the framework and Typescript.     
@@ -43,7 +43,7 @@ function AboutMe(){
       </Grid>
 
       <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px',mb: '10px', backgroundColor: '#55C5D1', display: 'flex', p: 1, borderRadius: 1}}>  
-        <br></br> <Typography textAlign='left' sx = {{ml: '10px', mr: '30px', color: 'white'}}>
+        <br></br> <Typography textAlign='left' sx = {{ml: '10px', mr: '30px', color: 'black'}}>
           <b> Fun facts: </b>
           <ul>
             <li>
