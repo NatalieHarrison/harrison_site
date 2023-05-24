@@ -14,14 +14,14 @@ const Navbar = () => {
   return (
   <Box sx ={{backgroundColor: '#55C5D1'}}>
     <Grid  container direction="row" justifyContent="center" alignItems="center">
-      <Grid xs = {4} md = {4}> 
+      <Grid xs = {2} md = {4}> 
         <Typography variant = "h6" sx ={{ color: '#F9F5EB', ml: '20px'}}>
           Natalie Harrison
         </Typography>
       </Grid>
 
     
-      <Grid xs ={4} md = {4}>
+      <Grid xs ={2} md = {4}>
         <Stack direction = "row" spacing = {2} ml = "20px"> 
                 <Button variant="text" sx = {{textTransform: 'none'}}>
                   <Link to= "/" style={{ textDecoration: 'none' }}>
@@ -62,7 +62,7 @@ const Navbar = () => {
           </Stack>
       </Grid>
          
-      <Grid xs ={4} md = {4}>
+      <Grid xs ={2} md = {4}>
             <Stack  direction="row"  alignItems="center"   spacing={3} sx = {{ml :'20px'}}>
               <IconButton  href='https://github.com/NatalieHarrison' sx = {{textTransform: 'none', backgroundColor: '#4699C2' }}>
                 <GitHubIcon/>
