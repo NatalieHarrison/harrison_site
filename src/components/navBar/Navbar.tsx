@@ -64,6 +64,7 @@ const Navbar = () => {
                     
                     </Link>
                 </Button>
+          </Stack>
      
       </Grid>
          

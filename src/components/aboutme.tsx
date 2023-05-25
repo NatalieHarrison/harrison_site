@@ -6,23 +6,27 @@ import Grid from '@mui/material/Grid';
 function AboutMe(){
   return(
       <Box sx = {{mt: '20px'}}>
-      <Container sx = {{backgroundColor: '#ED6A5A', mb: '20px',p:1, borderRadius: 1}}> 
-        <Typography variant = 'h4' align='center' sx = {{color: 'white'}}>
-          About Me
-        </Typography>
+        <Grid container direction="row" justifyContent="center" alignItems="center" >
+          <Grid xs = {11} md = {8}>
 
-        <Typography variant = 'subtitle1' align = 'center' sx  = {{mr: '160px', ml: '160px', color: 'white'}}>
-          <b>Hello,  I am Natalie Harrison and welcome to NatalieHarrison.org! </b>
-          <br></br>
-            This website serves as a place to not only showcase my work as a student of computer science, but also as a place for employers to learn more about my personality, hobbies and life outside of computer science. 
-        </Typography>
-      
-      </Container>
+            <Container sx = {{backgroundColor: '#ED6A5A', mb: '20px',p:1, borderRadius: 1}}> 
+              <Typography variant = 'h4' align='center' sx = {{color: 'white'}}>
+                About Me
+              </Typography>
+
+              <Typography variant = 'subtitle1' align = 'center' sx  = {{ color: 'white'}}>
+                <b>Hello,  I am Natalie Harrison and welcome to NatalieHarrison.org! </b>
+                <br></br>
+                  This website serves as a place to not only showcase my work as a student of computer science, but also as a place for employers to learn more about my personality, hobbies and life outside of computer science. 
+              </Typography>
+            
+            </Container>
+            </Grid>
     
-    <Grid container direction="row" justifyContent="center" alignItems="center" >
-      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px', backgroundColor: 'white', p: 1 ,borderRadius: 1}}>
+    
+      <Grid xs = {11} md = {8} sx = {{ backgroundColor: 'white', p: 1 ,borderRadius: 1}}>
 
-        <Typography textAlign='center' sx = {{ml: '30px', mr: '30px', color: 'black'}}>
+        <Typography textAlign='center'>
           <b>Why I chose computer science: </b>
           <br></br>
           In 2012, at 12 years old, I learned my first coding language, HTML. I was introduced to HTML when I wanted to change the appearance of a blog I was running. I started out using templates, but when the templates didn’t have exactly what I wanted, I began to make tiny adjustments that led to major adjustments. At the time, I never thought anything of it, it was just something I enjoyed doing after school. 
@@ -33,17 +37,17 @@ function AboutMe(){
       </Grid>
 
       
-      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px', backgroundColor: 'white'  ,p: 1 ,borderRadius: 1}}>  
+      <Grid xs = {11} md = {8} sx = {{mt: '10px', backgroundColor: 'white'  ,p: 1 ,borderRadius: 1}}>  
 
-        <Typography textAlign='center' sx = {{ml: '10px',mb: '10px', mr: '30px', color: 'black'}}> 
+        <Typography textAlign='center' > 
         <b> How did I build this website?</b>
         <br></br>
           Taking from the scrum methodology, I used GitHub to plan out this website. There I created a summary, a prototype, list of features I wanted to implement, the data required and more, which can be seen <a href = "https://github.com/NatalieHarrison/harrison-site"> at this link.</a> From there, I created a skeleton of the project and once I achieved the layout I wanted, I began making styling changes. I used AWS Amplify to deploy this website and GoDaddy to obtain a domain name, React as the framework and Typescript.     
         </Typography>
       </Grid>
 
-      <Grid xs = {8} md = {8} sx = {{mt: '10px',ml: '50px', mr: '20px',mb: '10px', backgroundColor: 'white', display: 'flex', p: 1, borderRadius: 1}}>  
-        <br></br> <Typography textAlign='left' sx = {{ml: '10px', mr: '30px', color: 'black'}}>
+      <Grid xs = {11} md = {8} sx = {{mt: '10px', backgroundColor: 'white', display: 'flex', p: 1, borderRadius: 1}}>  
+        <br></br> <Typography textAlign='left' >
           <b> Fun facts: </b>
           <ul>
             <li>
