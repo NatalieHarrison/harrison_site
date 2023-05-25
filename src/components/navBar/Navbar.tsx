@@ -15,14 +15,19 @@ const Navbar = () => {
   <Box sx ={{backgroundColor: '#55C5D1'}}>
     <Grid  container direction="row" justifyContent="center" alignItems="center" spacing = {1}>
       <Grid xs = {12} md = {4}> 
+
         <Typography variant = "h6" sx ={{ color: '#F9F5EB', ml: '20px'}}>
           Natalie Harrison
         </Typography>
       </Grid>
 
     
+
       <Grid xs ={12} md = {4}>
        
+
+        <Stack direction = "row" spacing = {2}> 
+
                 <Button variant="text" sx = {{textTransform: 'none'}}>
                   <Link to= "/" style={{ textDecoration: 'none' }}>
                     <Typography variant = "subtitle1" component="div" sx ={{ color: '#F9F5EB'}}>
@@ -62,8 +67,10 @@ const Navbar = () => {
      
       </Grid>
          
+
       <Grid xs ={12} md = {4}>
             <Stack  direction="row"  alignItems="center"   spacing={1} sx = {{ml :'20px'}}>
+  
               <IconButton  href='https://github.com/NatalieHarrison' sx = {{textTransform: 'none', backgroundColor: '#4699C2' }}>
                 <GitHubIcon/>
               </IconButton>
@@ -82,7 +89,7 @@ const Navbar = () => {
                 </Typography>
               </Button>
 
-              <Button  href="https://www.headstogetherhealth.com"  sx = {{textTransform: 'none', backgroundColor: '#4699C2'  }}>
+              <Button  href="https://www.headstogetherhealth.com"   sx = {{textTransform: 'none', backgroundColor: '#4699C2'  }}>
                 <Typography sx = {{color: '#F9F5EB'}}>
                   Heads Together Health
                 </Typography>
