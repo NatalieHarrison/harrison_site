@@ -11,12 +11,14 @@ interface ICountdown{
 const CountDownTimer = ({ hours = 0, minutes = 0, seconds = 60}:ICountdown) => {
   const [time, setTime] = React.useState<ICountdown>({hours,minutes,seconds});
 
+
+
   
   const tick = () => {
     if (time.hours === 0 && time.minutes === 0 && time.seconds === 0)
       reset()
-      else if(time.hours === 0 && time.seconds === 0 && time.minutes != 0){
-        setTime({hours:time.hours, minutes:time.minutes-1, seconds: 59})
+      else if((time.hours === 0 || isNaN(time.hours)) && time.seconds === 0 && time.minutes != 0){
+        setTime({hours: 0 , minutes:time.minutes-1, seconds: 59})
       }
       else if(time.hours === 0 && time.minutes == 0 && time.seconds != 0){
         setTime({hours: time.hours, minutes: time.minutes, seconds: time.seconds-1})
@@ -24,7 +26,7 @@ const CountDownTimer = ({ hours = 0, minutes = 0, seconds = 60}:ICountdown) => {
       else if (time.hours === 0 && time.minutes != 0 && time.seconds != 0){
         setTime({hours:time.hours, minutes: time.minutes, seconds: time.seconds-1})
       }
-      else if (time.minutes === 0 && time.seconds === 0 && time.hours != 0){
+      else if ((time.minutes === 0 || isNaN(time.minutes)) && time.seconds === 0 && time.hours != 0){
         setTime({ hours:time.hours-1, minutes: 59, seconds: 59 })
       }
       else if (time.seconds === 0 && time.hours != 0 && time.minutes != 0){
