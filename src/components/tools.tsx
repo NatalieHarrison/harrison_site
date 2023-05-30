@@ -15,14 +15,14 @@ function Tools() {
       <Container sx = {{backgroundColor:'white'}}>
 
         <Grid container direction = "row" >
-          <Grid xs = {6} md = {6}>
+          <Grid xs = {11} md = {6} >
             <Typography variant = "h6">
               Calculator
             </Typography>
             <DisplayCalculator/>
           </Grid>
 
-          <Grid xs = {6} md = {6} >
+          <Grid xs = {11} md = {6} sx = {{mb: '10px'}}>
             <Typography variant = "h6">
               Countdown Timer
             </Typography> 
