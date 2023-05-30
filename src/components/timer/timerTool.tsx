@@ -23,6 +23,7 @@ const TimerTool = () => {
     }
   }
 
+
   return(
     <Box>
       <Stack direction = "row" spacing={2} >
@@ -36,10 +37,14 @@ const TimerTool = () => {
        onClick = {startTimerClick}>
         Set/Reset Timer
       </Button>
+     
 
       {startTimer && (
         <div>
-          <CountDownTimer hours = {parseInt(hrsInput)} minutes = {parseInt(minsInput)} seconds = {0}></CountDownTimer>
+          <Stack direction= "row">
+
+            <CountDownTimer hours = {parseInt(hrsInput)} minutes = {parseInt(minsInput)} seconds = {0}></CountDownTimer>
+          </Stack>
         </div>
       )}
 
