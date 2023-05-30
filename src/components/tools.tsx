@@ -1,4 +1,4 @@
-import { Box, Container, Stack, Typography} from "@mui/material";
+import { Box, Container, Grid, Stack, Typography} from "@mui/material";
 import TimerTool from "./timer/timerTool";
 import DisplayCalculator from "./mathComponents/displayCalculator";
 
@@ -14,22 +14,22 @@ function Tools() {
         </Container>
       <Container sx = {{backgroundColor:'white'}}>
 
-        <Stack direction = "row" spacing ={10}>
-          <Stack direction = "column">
+        <Grid container direction = "row" >
+          <Grid xs = {6} md = {6}>
             <Typography variant = "h6">
               Calculator
             </Typography>
             <DisplayCalculator/>
-          </Stack>
+          </Grid>
 
-          <Stack direction = "column" spacing = {2}>
+          <Grid xs = {6} md = {6} >
             <Typography variant = "h6">
               Countdown Timer
             </Typography> 
             <TimerTool/>
-          </Stack>
+          </Grid>
           
-        </Stack>
+        </Grid>
         
         </Container>
       </Box>
