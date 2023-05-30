@@ -11,9 +11,16 @@ const TimerTool = () => {
 
 
 
+
   const startTimerClick = () => {
     setTimer(current => !current) //displays the timer and hides it when button clicks 
     // setResetTimer (current => !current)
+    if (minsInput == ""){
+      setMinsInput("0")
+    }
+    if (hrsInput == ""){
+      setHrsInput("0")
+    }
   }
 
   return(
@@ -21,7 +28,8 @@ const TimerTool = () => {
       <Stack direction = "row" spacing={2} >
 
       <TextField id="outlined-number" label="Hours" InputLabelProps={{shrink: true, }} variant="outlined" sx = {{width: '60px'}} value={hrsInput} onChange={(e) => setHrsInput(e.target.value)}/>
-      <TextField id="outlined-number" label="Mins"  InputLabelProps={{shrink: true,}} variant="outlined" sx = {{width: '60px'}} value={minsInput} onChange={(e) => setMinsInput(e.target.value)} />
+      <TextField id="outlined-number" label="Mins"  InputLabelProps={{shrink: true,}} variant="outlined" sx = {{width: '60px'}} value={minsInput} onChange={(e) => setMinsInput(e.target.value)}
+      />
 
       <Button
        variant="contained" 
