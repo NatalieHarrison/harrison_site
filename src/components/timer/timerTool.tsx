@@ -32,9 +32,7 @@ const TimerTool = () => {
       <TextField id="outlined-number" label="Mins"  InputLabelProps={{shrink: true,}} variant="outlined" sx = {{width: '60px'}} value={minsInput} onChange={(e) => setMinsInput(e.target.value)}
       />
       {!startTimer &&
-      <Button
-       variant="contained" 
-       onClick = {startTimerClick}>
+      <Button variant="contained" onClick = {startTimerClick} sx = {{ backgroundColor: '#4699C2'}} >
         Start
       </Button>
 }

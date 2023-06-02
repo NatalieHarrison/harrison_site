@@ -59,7 +59,7 @@ function DisplayCalculator (){
       <Stack direction = "row" spacing = {.5} sx = {{mt: '10px'}}>
         <div> 
           <Button variant = "outlined"
-          onClick = {simplifyClick}>Simplify</Button>
+          onClick = {simplifyClick} >Simplify</Button>
           {showSimplify && (
             <div>
               <Simplify></Simplify>
