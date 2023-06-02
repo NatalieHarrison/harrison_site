@@ -23,7 +23,7 @@ function Tools() {
           </Grid>
 
           <Grid xs = {6} md = {6} >
-            <Typography variant = "h6">
+            <Typography variant = "h6" sx = {{mb: '15px'}}>
               Countdown Timer
             </Typography> 
             <TimerTool/>

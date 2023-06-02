@@ -72,7 +72,7 @@ const Navbar = () => {
       <Grid xs ={12} md = {4}>
             <Stack  direction="row"  alignItems="center"   spacing={1} sx = {{ml :'20px'}}>
   
-              <IconButton  href='https://github.com/NatalieHarrison' sx = {{textTransform: 'none', backgroundColor: '#4699C2' }}>
+              <IconButton  href='https://github.com/NatalieHarrison' sx = {{textTransform: 'none', backgroundColor: '#4699C2', mt: '5px', mb: '5px'}}>
                 <GitHubIcon/>
               </IconButton>
 
