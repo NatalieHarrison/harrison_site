@@ -29,9 +29,9 @@ function AboutMe(){
         <Typography textAlign='center'>
           <b>Why I chose computer science: </b>
           <br></br>
-          In 2012, at 12 years old, I learned my first coding language, HTML. I was introduced to HTML when I wanted to change the appearance of a blog I was running. I started out using templates, but when the templates didn’t have exactly what I wanted, I began to make tiny adjustments that led to major adjustments. At the time, I never thought anything of it, it was just something I enjoyed doing after school. 
+          In 2012, at 12 years old, I learned my first coding language, HTML. I was introduced to HTML when I wanted to change the appearance of a blog I was running. I started out using templates, but when the templates didn’t have exactly what I wanted, I began to make tiny adjustments that led to major adjustments. At the time, I never thought anything of it, it was only an after school activity I enjoyed. 
           <br></br>
-          In early 2020,  I was leaning into choosing computer science as my college major. I felt that computer science was extremely fascinating and a field where I could thrive and make meaningful impact with my work. Later that year, I was able to tour the Kennedy Space Center and see the Space X launch in Cape Canaveral, Florida. During this trip, I had realized choosing computer science was exactly what I was supposed to be doing. My life goal had become to be apart of a team that works hard to build technology that pushes humanity forward and watch it become apart of history.
+          In early 2020,  I was leaning into choosing computer science as my college major. I felt drawn to computer science because I enjoyed problem solving and was interested in the technology that could be created by computer scientists'. Later that year, I was able to tour the Kennedy Space Center and see the Space X launch in Cape Canaveral, Florida. During this trip, I had realized choosing computer science was exactly what I was supposed to be doing. My life goal had become to be apart of a team that works to build technology that pushes humanity forward and watch it become apart of history.
         </Typography>
 
       </Grid>
@@ -70,9 +70,6 @@ function AboutMe(){
       </Grid>
       
       </Box>
-    
-
-
 
   )
 }
