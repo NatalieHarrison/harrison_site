@@ -40,7 +40,7 @@ const TimerTool = () => {
       {startTimer && (
         <div>
           <Stack direction= "row">
-          <Button variant="contained" onClick = {startTimerClick} sx = {{mr: '10px'}}>
+          <Button variant="contained" onClick = {startTimerClick} sx = {{mr: '10px', backgroundColor: '#4699C2'}}>
               Reset
           </Button>
 
