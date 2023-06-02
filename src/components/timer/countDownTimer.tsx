@@ -13,7 +13,9 @@ interface ICountdown{
 
 const CountDownTimer = ({ hours = 0, minutes = 0, seconds = 60}:ICountdown) => {
   const [pause, setPause] = useState(false)
+  const [play, setPlay] = useState(false)
   const [time, setTime] = React.useState<ICountdown>({hours,minutes,seconds});
+
 
   const tick = () => {
     if (pause == true){
@@ -64,13 +66,15 @@ const CountDownTimer = ({ hours = 0, minutes = 0, seconds = 60}:ICountdown) => {
               .toString()
               .padStart(2, '0')}:${time.seconds.toString().padStart(2, '0')}`}
         </p>
+        {!pause && 
         <Button variant="contained" onClick = {() => setPause(true)} sx = {{ml: '10px'}}>
-                  <PauseIcon/>
+            <PauseIcon/>
         </Button>
-        
+}
+
         {pause && (
             <Button variant="contained" onClick = {() => setPause(false)} sx = {{ml: '10px'}}>
-            <PlayArrowIcon/>
+              <PlayArrowIcon/>
             </Button>
         )}
       
