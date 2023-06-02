@@ -31,17 +31,20 @@ const TimerTool = () => {
       <TextField id="outlined-number" label="Hours" InputLabelProps={{shrink: true, }} variant="outlined" sx = {{width: '60px'}} value={hrsInput} onChange={(e) => setHrsInput(e.target.value)}/>
       <TextField id="outlined-number" label="Mins"  InputLabelProps={{shrink: true,}} variant="outlined" sx = {{width: '60px'}} value={minsInput} onChange={(e) => setMinsInput(e.target.value)}
       />
-
+      {!startTimer &&
       <Button
        variant="contained" 
        onClick = {startTimerClick}>
-        Set/Reset Timer
+        Start
       </Button>
+}
      
-
       {startTimer && (
         <div>
           <Stack direction= "row">
+          <Button variant="contained" onClick = {startTimerClick} sx = {{mr: '10px'}}>
+              Reset
+          </Button>
 
             <CountDownTimer hours = {parseInt(hrsInput)} minutes = {parseInt(minsInput)} seconds = {0}></CountDownTimer>
           </Stack>
