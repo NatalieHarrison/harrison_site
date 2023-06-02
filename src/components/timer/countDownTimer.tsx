@@ -66,14 +66,18 @@ const CountDownTimer = ({ hours = 0, minutes = 0, seconds = 60}:ICountdown) => {
               .toString()
               .padStart(2, '0')}:${time.seconds.toString().padStart(2, '0')}`}
         </p>
-        {!pause && 
-        <Button variant="contained" onClick = {() => setPause(true)} sx = {{ml: '10px'}}>
+        {!pause &&
+        <Button variant="contained" onClick = {() => setPause(true)} sx = {{ml: '10px',backgroundColor: '#4699C2', ":hover": {
+          bgcolor: '#55C5D1'
+        } }}>
             <PauseIcon/>
         </Button>
 }
 
         {pause && (
-            <Button variant="contained" onClick = {() => setPause(false)} sx = {{ml: '10px'}}>
+            <Button variant="contained" onClick = {() => setPause(false)} sx = {{ml: '10px', backgroundColor: '#4699C2', ":hover": {
+              bgcolor: '#55C5D1'
+            }}}>
               <PlayArrowIcon/>
             </Button>
         )}

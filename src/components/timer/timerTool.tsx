@@ -32,9 +32,9 @@ const TimerTool = () => {
       <TextField id="outlined-number" label="Mins"  InputLabelProps={{shrink: true,}} variant="outlined" sx = {{width: '60px'}} value={minsInput} onChange={(e) => setMinsInput(e.target.value)}
       />
       {!startTimer &&
-      <Button
-       variant="contained" 
-       onClick = {startTimerClick}>
+      <Button variant="contained" onClick = {startTimerClick} sx = {{ backgroundColor: '#4699C2', ":hover": {
+        bgcolor: '#55C5D1'
+      }}} >
         Start
       </Button>
 }
@@ -42,7 +42,9 @@ const TimerTool = () => {
       {startTimer && (
         <div>
           <Stack direction= "row">
-          <Button variant="contained" onClick = {startTimerClick} sx = {{mr: '10px'}}>
+          <Button variant="contained" onClick = {startTimerClick} sx = {{mr: '10px', backgroundColor: '#4699C2' , ":hover": {
+              bgcolor: '#55C5D1'
+            }}}>
               Reset
           </Button>
 
