@@ -170,7 +170,7 @@ export const Simplify = () => {
             value={input}
             onChange={(e) => setInput(e.target.value)}
           />
-          <Button onClick={handleClick} variant="contained">
+          <Button onClick={handleClick} variant="contained" sx = {{backgroundColor: '#4699C2'}}>
             Evaluate
           </Button>
         </Stack>
@@ -182,7 +182,7 @@ export const Simplify = () => {
             sx = {{
               width: 62.5,
               mt:2, 
-              fontSize: 30
+              fontSize: 30, backgroundColor: '#4699C2'
             }}>𝝅</Button>
 
             <Button 
@@ -190,7 +190,7 @@ export const Simplify = () => {
             sx = {{
               width: 62.5,
               mt:2,
-              fontSize: 20
+              fontSize: 20, backgroundColor: '#4699C2'
             }}>√</Button>
 
              <Button 
@@ -198,7 +198,7 @@ export const Simplify = () => {
             sx = {{
               width: 62.5,
               mt:2,
-              fontSize: 20
+              fontSize: 20, backgroundColor: '#4699C2'
             }}>^</Button>
           
 
@@ -238,27 +238,27 @@ export const Simplify = () => {
 
           
         <ButtonGroup sx = {{mt:.2, width: 250}}disableElevation variant="contained">
-          <Button onClick = {() => setInput(input + "cos()")}
+          <Button onClick = {() => setInput(input + "cos()")} sx = {{backgroundColor: '#4699C2'}}
             >cos</Button>
 
-          <Button onClick = {() => setInput(input + "sin()")}
+          <Button onClick = {() => setInput(input + "sin()")}  sx = {{backgroundColor: '#4699C2'}}
             >sin</Button>
 
-          <Button onClick = {() => setInput(input + "tan()")}
+          <Button onClick = {() => setInput(input + "tan()")}  sx = {{backgroundColor: '#4699C2'}}
             >tan</Button>
 
-          <Button onClick = {unHideInverse}> Inverse </Button>
+          <Button onClick = {unHideInverse}  sx = {{backgroundColor: '#4699C2'}}> Inverse </Button>
         </ButtonGroup>
         {openInverse && (
             <div>
               <ButtonGroup sx = {{mt:.2, width: 250}}disableElevation variant="contained">
-              <Button onClick = {() => setInput(input + "arccos()")}
+              <Button onClick = {() => setInput(input + "arccos()")}  sx = {{backgroundColor: '#4699C2'}}
                 >arccos</Button>
 
-              <Button onClick = {() => setInput(input + "arcsin()")}
+              <Button onClick = {() => setInput(input + "arcsin()")}  sx = {{backgroundColor: '#4699C2'}}
                 >arcsin</Button>
 
-              <Button onClick = {() => setInput(input + "arctan()")}
+              <Button onClick = {() => setInput(input + "arctan()")}  sx = {{backgroundColor: '#4699C2'}}
                 >arctan</Button>
             </ButtonGroup>
 
