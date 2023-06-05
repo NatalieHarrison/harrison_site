@@ -1,6 +1,7 @@
 import { Box, Container, Grid, Stack, Typography} from "@mui/material";
 import TimerTool from "./timer/timerTool";
 import DisplayCalculator from "./mathComponents/displayCalculator";
+import ToDoList from "./todolist";
 
 function Tools() {  
   return (
@@ -16,7 +17,7 @@ function Tools() {
 
         <Grid container direction = "row" >
 
-          <Grid xs = {12} md = {6}>
+          <Grid xs = {12} md = {4}>
 
             <Typography variant = "h6">
               Calculator
@@ -25,7 +26,7 @@ function Tools() {
           </Grid>
 
 
-          <Grid xs = {12} md = {6} >
+          <Grid xs = {12} md = {4} >
             <Typography variant = "h6" sx = {{mb: '15px'}}>
 
               Countdown Timer
@@ -33,6 +34,10 @@ function Tools() {
             <TimerTool/>
           </Grid>
           
+          <Grid xs = {12} md = {4}>
+            <ToDoList/>
+          </Grid>
+
         </Grid>
         
         </Container>
