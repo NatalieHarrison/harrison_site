@@ -6,11 +6,33 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import Stack from '@mui/material/Stack';
 import AddIcon from '@mui/icons-material/Add';
-import { Icon } from '@mui/material';
+import { Icon, List, ListItem } from '@mui/material';
 import { useState } from 'react';
 
 const ToDoList = () => {
   const [addTask, setAddTask] = useState(false)
+  const [input, setInput] = useState(""); //text field where user enters new task 
+  const [task, setTask] = useState("")
+  const [list, setList] = useState<string[]>([]);
+
+  const handleClick = () => {
+    const newList = [...list, input];
+    setList(newList)
+  }
+
+  function ListItem(props: {
+    value:
+      | string
+      | number
+      | boolean
+      | React.ReactElement<any, string | React.JSXElementConstructor<any>>
+      | React.ReactFragment
+      | React.ReactPortal
+      | null
+      | undefined;
+  }) {
+    return <li>{props.value}</li>;
+  }
   return (
     <div>
       <Box>
@@ -18,6 +40,14 @@ const ToDoList = () => {
         <Typography>
           To-Do List
         </Typography>
+
+        <Box maxWidth="xs" sx={{ ml: 7, fontSize: 25 }}>
+          <List>
+            {list.map((lists) => (
+                <ListItem key={lists.toString()} value={lists} />
+              ))}
+          </List>
+        </Box>
 
         {!addTask &&(
            <Button onClick = {() => setAddTask(true)}>
@@ -28,8 +58,8 @@ const ToDoList = () => {
 
         {addTask && (
           <Stack direction = "row" spacing = {2}>
-          <TextField id ="outlined-basic" label = "Enter Task" variant='outlined'></TextField>
-          <IconButton> <AddIcon/> </IconButton>
+          <TextField id ="outlined-basic" label = "Enter Task" variant='outlined' value = {input} onChange={(e) => setInput(e.target.value)}></TextField>
+          <IconButton onClick = {handleClick}> <AddIcon/> </IconButton>
           </Stack>
         )}
         {/* <Checkbox /> */}
