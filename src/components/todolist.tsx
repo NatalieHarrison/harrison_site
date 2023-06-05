@@ -42,9 +42,10 @@ const ToDoList = () => {
           To-Do List
         </Typography>
 
-        <Box maxWidth="xs" >
+    
           <List>
             {list.map((lists) => (
+              <Box sx = {{mb: '10px'}}>
               <Paper elevation = {3} >
                 <Stack direction = "row" justifyContent="baseline" alignItems="center" >
                   <Checkbox/>
@@ -53,9 +54,10 @@ const ToDoList = () => {
                   </Box>
                 </Stack>
               </Paper>
+              </Box>
               ))}
           </List>
-        </Box>
+
 
         {!addTask &&(
            <Button onClick = {() => setAddTask(true)}>
