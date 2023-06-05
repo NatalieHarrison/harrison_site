@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import Stack from '@mui/material/Stack';
+import Paper from '@mui/material/Paper';
 import AddIcon from '@mui/icons-material/Add';
 import { Icon, List, ListItem } from '@mui/material';
 import { useState } from 'react';
@@ -41,10 +42,17 @@ const ToDoList = () => {
           To-Do List
         </Typography>
 
-        <Box maxWidth="xs" sx={{ ml: 7, fontSize: 25 }}>
+        <Box maxWidth="xs" >
           <List>
             {list.map((lists) => (
-                <ListItem key={lists.toString()} value={lists} />
+              <Paper elevation = {3} >
+                <Stack direction = "row" justifyContent="baseline" alignItems="center" >
+                  <Checkbox/>
+                  <Box sx ={{mr: '10px'}}>
+                    <ListItem key={lists.toString()} value={lists}/>
+                  </Box>
+                </Stack>
+              </Paper>
               ))}
           </List>
         </Box>
