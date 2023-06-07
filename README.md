@@ -11,9 +11,13 @@ The purpose of this site is to serve as a site similar to what a resume would di
 * The user will be able to use the tools created by myself.
   * Derivative calculator
   * Basic calculator
-* The user will be able to leave a review on me
+* The user will be able to leave a review on me (unfinished)
   * Will require the user to enter their name, choose a star out of 5 and leave a comment
   * Optional to fill in will be the company the user is coming from 
+* Timer (in the works) 
+  * Start timer
+  * Stop timer
+  * Pause timer 
   
   ## Data Required
   * The links will require a href 
@@ -63,7 +67,7 @@ The purpose of this site is to serve as a site similar to what a resume would di
   ### Actions/Reactions the system may perform in response to user action
   * None
   ----------------------------------------------------------------------------
-  ## Reviews
+  ## Reviews (unfinished)
   ### Scenarios
   * The user enters in their name, company, choose a star and leave a comment
   * The user completes a review and their review isn't displayed
@@ -81,8 +85,35 @@ The purpose of this site is to serve as a site similar to what a resume would di
   * The system will save the entered information
   * The system will display the entered information on the website for anyone to see
   ----------------------------------------------------------------------------
+  ## Timer
+  ### Scenarios
+  * The user wants to enter numbers into the hours and minutes text fields
+  * The user wants to start the timer
+  * The user wants to reset the timer
+  * The user wants pause the timer
+  * The user leaves the hour text field blank but not the minutes (and vice versa)
+  * The user tries to start the timer without entering any numbers into the text fields
+  * The user enters a letter instead of a number in the text field
+
+ ### Data Required 
+ * Hours and minutes user has inputted in the text fields
+ 
+ ### Actions user can perform in the UI
+ * The user can enter number in text field boxes
+ * The user can click on the button to start the timer
+ * The user can click on the button to stop the timer
+ * The user can click on the button to pause the timer
+  
+  ![timer countdown logic](https://github.com/NatalieHarrison/harrison_site/assets/86238390/07d19488-4e83-4669-8203-2bec2a03632e)
+ * Logic can be simplified
+ * Using code from: https://medium.com/bb-tutorials-and-thoughts/how-to-create-a-countdown-timer-in-react-app-typescript-version-5617abfe44f3
+   * Changed the tick function to work better and make logic more understandable.
+  ----------------------------------------------------------------------------
+  
+  
   # Libraries used
   * Material UI - npm install @mui/material @emotion/react @emotion/styled
+  * Countdownt Timer - npx create-react-app countdown-timer-react-ts --template typescript
 
   
   
