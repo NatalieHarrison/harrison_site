@@ -8,7 +8,7 @@ import Experience from './resumeComponents/experience';
 import Involvement from './resumeComponents/involvement';
 function Resume (){
   return(
-    <Box mb = '20px' mt = '20px'  >
+    <Box  mt = '20px' >
         <Container sx = {{backgroundColor: '#ED6A5A',p:1, borderRadius: 1}}>
           <Typography variant = 'h4' align='center' sx = {{color: 'white'}}>
                 2023 Resume
