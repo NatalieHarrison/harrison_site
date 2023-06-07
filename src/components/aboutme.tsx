@@ -11,7 +11,7 @@ function AboutMe(){
 
             <Container sx = {{backgroundColor: '#ED6A5A', mb: '20px',p:1, borderRadius: 1}}> 
               <Typography variant = 'h4' align='center' sx = {{color: 'white'}}>
-                About Meee
+                About Me
               </Typography>
 
               <Typography variant = 'subtitle1' align = 'center' sx  = {{ color: 'white'}}>
