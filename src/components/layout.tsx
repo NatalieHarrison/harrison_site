@@ -10,8 +10,8 @@ const Layout = () => {
     <Box sx = {{backgroundColor: '#D4FAFC',  mt: '10px'}}>
       
     
-    <Navbar/>
-    <Outlet/>
+      <Navbar/>
+      <Outlet/>
     </Box>
     </>
   )
