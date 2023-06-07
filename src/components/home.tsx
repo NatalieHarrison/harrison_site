@@ -1,7 +1,7 @@
 import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
 
-import Header from './header';
+
 import AboutMe from './aboutme';
 import Resume from './resume';
 import Tools from './tools';
