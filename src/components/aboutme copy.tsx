@@ -13,12 +13,6 @@ function AboutMeCopy(){
               <Typography variant = 'h4' align='center' sx = {{color: 'white'}}>
                 About Me
               </Typography>
-
-              <Typography variant = 'subtitle1' align = 'center' sx  = {{ color: 'white'}}>
-                <b>Hello,  I am Natalie Harrison and welcome to NatalieHarrison.org! </b>
-                <br></br>
-                  This website serves as a place to not only showcase my work as a student of computer science, but also as a place for employers to learn more about my personality, hobbies and life outside of computer science. 
-              </Typography>
             
             </Container>
             </Grid>
