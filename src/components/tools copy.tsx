@@ -1,13 +1,12 @@
 import { Box, Container, Grid, Stack, Typography} from "@mui/material";
 import TimerTool from "./timer/timerTool";
 import DisplayCalculator from "./mathComponents/displayCalculator";
-import ToDoList from "./todolist";
 
-function Tools() {  
+function ToolsCopy() {  
   return (
     <div className="App">
 
-      <Box ml = '20px' mb = '150px' mt = '20px' >
+      <Box ml = '20px' mb = '150px' mt = '20px' height = '100vh'>
       <Container sx = {{backgroundColor: '#ED6A5A',p:1, borderRadius: 1}}>
           <Typography variant = 'h4' align='center' sx = {{color: 'white'}}>
               Tools
@@ -17,7 +16,7 @@ function Tools() {
 
         <Grid container direction = "row" >
 
-          <Grid xs = {12} md = {4}>
+          <Grid xs = {12} md = {6}>
 
             <Typography variant = "h6">
               Calculator
@@ -26,7 +25,7 @@ function Tools() {
           </Grid>
 
 
-          <Grid xs = {12} md = {4} >
+          <Grid xs = {12} md = {6} >
             <Typography variant = "h6" sx = {{mb: '15px'}}>
 
               Countdown Timer
@@ -34,10 +33,6 @@ function Tools() {
             <TimerTool/>
           </Grid>
           
-          <Grid xs = {12} md = {4}>
-            <ToDoList/>
-          </Grid>
-
         </Grid>
         
         </Container>
@@ -46,6 +41,6 @@ function Tools() {
   );
 }
 
-export default Tools;
+export default ToolsCopy;
 
 

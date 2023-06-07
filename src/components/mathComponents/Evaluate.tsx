@@ -168,7 +168,9 @@ export const Evaluate = () => {
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
-        <Button onClick={handleClick} variant="contained">
+        <Button onClick={handleClick} variant="contained" sx = {{ backgroundColor: '#4699C2', ":hover": {
+              bgcolor: '#55C5D1'
+            }}}>
           Evaluate
         </Button>
       </Stack>
@@ -179,20 +181,26 @@ export const Evaluate = () => {
             onClick = {() => setInput(input + "π")}
             sx = {{
               width: 62.5,
-              fontSize: 30
+              fontSize: 30, backgroundColor: '#4699C2', ":hover": {
+                bgcolor: '#55C5D1'
+              }
             }}>𝝅</Button>
             <Button 
             onClick = {() => setInput(input + "√()")}
             sx = {{
               width: 62.5,
-              fontSize: 20
+              fontSize: 20, backgroundColor: '#4699C2', ":hover": {
+                bgcolor: '#55C5D1'
+              }
             }}>√</Button>
             
             <Button 
             onClick = {() => setInput(input + "^")}
             sx = {{
               width: 62.5,
-              fontSize: 20
+              fontSize: 20, backgroundColor: '#4699C2', ":hover": {
+                bgcolor: '#55C5D1'
+              }
             }}>^</Button>
             <FormControl sx={{ width: 50 }}> 
             <InputLabel>&lt;</InputLabel>
@@ -229,27 +237,41 @@ export const Evaluate = () => {
 
       
       <ButtonGroup sx = {{mt:.2, width: 250}}disableElevation variant="contained">
-        <Button onClick = {() => setInput(input + "cos()")}
+        <Button onClick = {() => setInput(input + "cos()")} sx = {{ backgroundColor: '#4699C2', ":hover": {
+              bgcolor: '#55C5D1'
+            }}}
           >cos</Button>
 
-        <Button onClick = {() => setInput(input + "sin()")}
+        <Button onClick = {() => setInput(input + "sin()")} sx = {{ backgroundColor: '#4699C2', ":hover": {
+              bgcolor: '#55C5D1'
+            }}}
           >sin</Button>
 
-        <Button onClick = {() => setInput(input + "tan()")}
+        <Button onClick = {() => setInput(input + "tan()")} sx = {{ backgroundColor: '#4699C2', ":hover": {
+              bgcolor: '#55C5D1'
+            }}}
           >tan</Button>
 
-        <Button onClick = {unHideInverse}> Inverse </Button>
+        <Button onClick = {unHideInverse} sx = {{ backgroundColor: '#4699C2', ":hover": {
+              bgcolor: '#55C5D1'
+            }}}> Inverse </Button>
         </ButtonGroup>
         {openInverse && (
             <div>
               <ButtonGroup sx = {{mt:.2, width: 250}}disableElevation variant="contained">
-              <Button onClick = {() => setInput(input + "arccos()")}
+              <Button onClick = {() => setInput(input + "arccos()")} sx = {{ backgroundColor: '#4699C2', ":hover": {
+              bgcolor: '#55C5D1'
+            }}}
                 >arccos</Button>
 
-              <Button onClick = {() => setInput(input + "arcsin()")}
+              <Button onClick = {() => setInput(input + "arcsin()")} sx = {{ backgroundColor: '#4699C2', ":hover": {
+              bgcolor: '#55C5D1'
+            }}}
                 >arcsin</Button>
 
-              <Button onClick = {() => setInput(input + "arctan()")}
+              <Button onClick = {() => setInput(input + "arctan()")} sx = {{ backgroundColor: '#4699C2', ":hover": {
+              bgcolor: '#55C5D1'
+            }}}
                 >arctan</Button>
             </ButtonGroup>
 
