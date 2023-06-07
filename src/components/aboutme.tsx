@@ -25,12 +25,13 @@ function AboutMe(){
                 Extremely willing to learn every aspect of coding and use it to create innovative technology.
               </Typography>
               
-              <Stack direction = "row"> 
+              <Stack direction = "row" justifyContent="center"
+  alignItems="center"> 
                 <Typography variant = 'h6' align='left' sx = {{color: 'white', mr: '5px'}}> Learn more about me </Typography> 
                 <Button variant='contained'  sx = {{backgroundColor: 'white', textTransform: 'none', ":hover": {bgcolor: 'white'}}}>
                   <Link to= "/about" style={{ textDecoration: 'none' }}>
                     <Typography color={'#ED6A5A'}>
-                      here 
+                      here!
                     </Typography>
                   </Link>
                </Button>
