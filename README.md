@@ -1,4 +1,4 @@
-# personalSite
+# https://www.natalieharrison.org 
 ## Summary
 The purpose of this site is to serve as a site similar to what a resume would display. Through this site, employers will not only be able to see my skills, projects I have worked on but also get to know me and see my personality through the site (colors, design, photos, about me.) The site will also include some tools like the derivative calculator and other tools I create in the future that students can use. 
 
