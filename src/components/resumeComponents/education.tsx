@@ -7,7 +7,13 @@ function Education(){
             <Typography variant = "h6"  >
             <b><u>EDUCATION</u></b>
             <br></br> <b>University of North Carolina - Wilmington | December 2023 </b>
+            
+          
+
           </Typography>
+              <Typography variant = "body1"  >
+                 Bachelor of Science in Computer Science, Systems concentration
+              </Typography>
               <Typography variant = "body1"  >
                 Related completed courses: Object Oriented Programming & Design, Introduction to Data Structures, Design & Analysis of Algorithms, Operating Systems, Database Design & Implementation
               </Typography>

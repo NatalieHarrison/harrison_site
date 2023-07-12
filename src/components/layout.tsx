@@ -8,7 +8,6 @@ const Layout = () => {
   return(
     <>
     <Box sx = {{backgroundColor: '#D4FAFC',  mt: '10px'}}>
-      
     
       <Navbar/>
       <Outlet/>

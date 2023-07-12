@@ -11,41 +11,33 @@ function Projects(){
             <Typography variant = "body1" >
               <ul>
                 <li>
-                  DogLog (Fall 2022)
+                  DogLog | <i>JavaScript, Python, Jinja, Flask, SQLite, HTML/CSS, Agile Methodology </i>| <b> Fall 2023 </b>
                   <ol>
                     - Web application intended for dog owners to keep track of their dogs' health. Users can create a pet profile that will contain the dog's date of birth, weight, medications and health records. 
                   </ol>
                   <ol>
-                    - Project manager in a team of six.
+                    - Managed group of 5 students as Project Manager.
+                  </ol>
+             
+                </li>
+
+                <li>
+                Calculus I Calculator |<i>Typescript, React, MathJS, Material-UI</i> | <b>  Spring 2022 </b>
+                  <ol>
+                    - Developed a calculator that solves simple expressions, algebraic expressions and derivatives.
                   </ol>
                   <ol>
-                    - Python, HTML, CSS, JavaScript, Jinja, Flask, Agile Methodology, SQLite
+                    - Accomplished with the help of my mentors, Sam Taylor and Lee Gilliam.
                   </ol>
                 </li>
 
                 <li>
-                Calculus I Calculator (Spring 2022)
+                   <a href= "https://ksuid.net"> K-Sortable ID Generator </a>| <i> TypeScript, React, AWS, Material-UI </i> | <b>Fall 2021</b>
                   <ol>
-                    - Created a calculator that solves simple, algebraic and derivative expressions.
+                    - Developed a website that generates globally unique IDs and contains a time component.
                   </ol>
                   <ol>
-                    - Accomplished with the help of my mentor at Carova Labs.
-                  </ol>
-                  <ol>
-                    - TypeScript, Material UI, React, MathJS
-                  </ol>
-                </li>
-
-                <li>
-                   <a href= "https://ksuid.net"> K-Sortable ID Generator (Fall 2021) </a>
-                  <ol>
-                    - Created a site that generates globally unique IDs and contains a time component.
-                  </ol>
-                  <ol>
-                    - Accomplished with the help of my mentors at Carova Labs
-                  </ol>
-                  <ol>
-                    - TypeScript, Material UI, React, AWS
+                    - Accomplished with the help of my mentors, Sam Taylor and Lee Gilliam.
                   </ol>
                 </li>
               </ul>

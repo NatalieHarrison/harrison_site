@@ -23,9 +23,13 @@ function AboutMeCopy(){
         <Typography textAlign='center'>
           <b>Why I chose computer science: </b>
           <br></br>
-          In 2012, at 12 years old, I learned my first coding language, HTML. I was introduced to HTML when I wanted to change the appearance of a blog I was running. I started out using templates, but when the templates didn’t have exactly what I wanted, I began to make tiny adjustments that led to major adjustments. At the time, I never thought anything of it, it was only an after school activity I enjoyed. 
+          In 2012, at the age of 12, I began my coding journey by learning my first language, HTML. It all began when I wanted to modify the appearance of a blog I was running. Starting with templates, I soon found myself making tiny adjustments that gradually transformed into significant modifications. At the time, it was only an after-school activity I enjoyed, never thinking much of it.
           <br></br>
-          In early 2020,  I was leaning into choosing computer science as my college major. I felt drawn to computer science because I enjoyed problem solving and was interested in the technology that could be created by computer scientists'. Later that year, I was able to tour the Kennedy Space Center and see the Space X launch in Cape Canaveral, Florida. During this trip, I had realized choosing computer science was exactly what I was supposed to be doing. My life goal had become to be apart of a team that works to build technology that pushes humanity forward and watch it become apart of history.
+          <br></br>
+          In early 2020, as I contemplated my college major, I felt a pull towards Computer Science. The allure of problem-solving and the potential to create transformative technologies held my interest. It was a visit to the Kennedy Space Center, where I witnessed the first crewed flight launch from SpaceX, that solidified my decision. In that moment, I knew that Computer Science was my true calling.
+          <br></br>
+          <br></br>
+          From then on, my life's purpose became clear - to be part of a team that builds technology propelling humanity forward and leaving an undeniable mark on history. This goal drives me every day as I pursue my studies in Computer Science. 
         </Typography>
 
       </Grid>
@@ -36,7 +40,11 @@ function AboutMeCopy(){
         <Typography textAlign='center' > 
         <b> How did I build this website?</b>
         <br></br>
-          Taking from the scrum methodology, I used GitHub to plan out this website. There I created a summary, a prototype, list of features I wanted to implement, the data required and more, which can be seen <a href = "https://github.com/NatalieHarrison/harrison-site"> at this link.</a> From there, I created a skeleton of the project and once I achieved the layout I wanted, I began making styling changes. I used AWS Amplify to deploy this website and GoDaddy to obtain a domain name, React as the framework and Typescript.     
+        Adopting the principles of the scrum methodology, I used GitHub to outline the development of this website. There, I created a summary, a protoype, and a list of features I wanted to include. The repository can be viewed <a href = "https://github.com/NatalieHarrison/harrison-site"> here</a>. 
+
+        Once the groundwork was set, I constructed the project's skeleton, refined elements until I achieved the layout, keeping functionality and user experience in mind. 
+
+        I used AWS for deployment and Go Daddy to secure a domain name, React as the framework and Typescript as the primary language.
         </Typography>
       </Grid>
 
@@ -45,17 +53,16 @@ function AboutMeCopy(){
           <b> Fun facts: </b>
           <ul>
             <li>
-              My favorite book series is Dune.
+              My favorite book series is Dune and I am excited for the new movie coming out soon!
             </li>
             <li>
-              I recently ran my first half-marathon in December, 2022. My goal this year is to run two half-marathons and one marathon. I also enjoy playing tennis, yoga, weight lifting, hiking and walking my dogs. 
-
+              In December 2022, I ran my first half-marathon and would like to do more in the future. 
             </li>
             <li>
-              I love playing videos games and my favorites are the Sims, Call of Duty: Black Ops 2 and The Last of Us. 
+              I've always been a bit of a gamer and my all time favorites are The Sims, Call of Duty: Black Ops 2, and The Last of Us. 
             </li>
             <li>
-              When I am not solving coding problems, I enjoy solving puzzles.
+              I enjoy solving puzzles, only puzzles that have 500+ pieces though. Anything less is too easy!
             </li>
           </ul>
         </Typography>

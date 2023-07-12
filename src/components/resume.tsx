@@ -17,9 +17,9 @@ function Resume (){
 
         <Container sx = {{backgroundColor:'white'}}>
           <Education></Education>
-          <Skills></Skills>
           <Experience></Experience>
           <Projects></Projects> 
+          <Skills></Skills>
           <Involvement></Involvement>
         </Container>
 

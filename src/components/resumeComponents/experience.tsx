@@ -11,13 +11,19 @@ function Experience(){
               <Typography variant = "body1">
                 <ul>
                   <li>
-                    Developing  website with React, Amplify, Material UI, where users can create an account to view sports injury data from the last 20 years. Working with Datalys and graduates from Harvard, USC and Duke that are in the health and data field.
+                  Developed a dynamic website utilizing React, Amplify, and Material UI, enabling users to access comprehensive sports injury data.
                   </li>
                   <li>
-                    Developed <a href= "www.headstogetherhealth.com"> company website </a>using Square Space  
+                  Collaborated with esteemed organizations, including Datalys and UNC Health, in the health and data sectors to ensure the accuracy and relevancy of the information provided. 
                   </li>
                   <li>
-                    Position acquired through Upwork (free-lance employment platform)
+                  Designed and implemented the company’s website using Square Space, gaining knowledge on creating a seamless user experience and visually appealing interface.
+                  </li>
+                  <li>
+                  Demonstrated strong collaboration skills and exceptional attention to detail throughout the development process, ensuring the website’s functionality, design, and user experiences were of the highest standard.
+                  </li>
+                  <li>
+                  Position acquired through Upwork (free-lance employment platform)
                   </li>
                 </ul>
               </Typography>
@@ -29,16 +35,16 @@ function Experience(){
           <Typography variant = "body1" >
             <ul>
               <li>
-                Comprehensive knowledge of React
+              Gained extensive knowledge in React, demonstrating a comprehensive understanding of its concepts and best practices.
               </li>
               <li>
-                Communication with clients for mock user interface and site development updates
+              Exhibited exceptional client communication skills, actively collaborating on interface designs and provide timely updates on site development progress.
               </li>
               <li>
-                Continuous testing and integeration fo builds and releases
+              Demonstrated a commitment to quality assurance by ensuring continuous integration and ensuring the stability and functionality of web apps.
               </li>
               <li>
-                Extensive experience with Material UI
+              Demonstrated proficiency in Adobe XD, using it to create visually engaging and intuitive mock-ups.
               </li>
             </ul>
           </Typography>

@@ -4,25 +4,22 @@ function Skills(){
   return (
     <Box>
        <Typography variant = "h6" align = "left" component="div" sx ={{flexGrow:1}}>
-          <b><u>SKILLS</u></b>
+          <b><u> TECHNICAL SKILLS</u></b>
           </Typography>
 
             <Typography variant = "subtitle1" align = "left" component="div" sx ={{flexGrow:1}}> 
             <ul>
               <li>
-                Programming Languages: JavaScript, TypeScript, Python, Java, C++, HTML, CSS, Jinja
+                Programming Languages: JavaScript, TypeScript, Python, Java, HTML/CSS, SQL
               </li>
               <li>
-                Libraries: Material UI, React, Amplify, MathJS
+                Framework: React, Flask, Node.js
               </li>
               <li>
-                Framework: React, Flask
+                Developer Tools: AWS, Amplify, Amplify Studio, Route 53, Git, Go Daddy, Visual Studio Code, PyCharm, IntelliJ
               </li>
               <li>
-                Github
-              </li>
-              <li>
-                AWS
+                Libraries: NumPy, MathJS, MaterialUI
               </li>
             </ul>
             </Typography>
