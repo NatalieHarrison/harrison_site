@@ -86,6 +86,12 @@ const Navbar = () => {
                 Projects: 
               </Typography>
 
+              <Button href="https://www.studiance.com"  sx = {{textTransform: 'none', backgroundColor: SECONDARY_COLOR  }}>
+                <Typography sx = {{color: 'white'}}>
+                  Studiance
+                </Typography>
+              </Button>
+
               <Button href="https://ksuid.net"  sx = {{textTransform: 'none', backgroundColor: SECONDARY_COLOR  }}>
                 <Typography sx = {{color: 'white'}}>
                   KSuid
