@@ -13,7 +13,7 @@ function Skills(){
                 Programming Languages: JavaScript, TypeScript, Python, Java, HTML/CSS, SQL
               </li>
               <li>
-                Framework: React, Flask, Node.js
+                Framework: React, Flask, Django 
               </li>
               <li>
                 Developer Tools: AWS, Amplify, Amplify Studio, Route 53, Git, Go Daddy, Visual Studio Code, PyCharm, IntelliJ
