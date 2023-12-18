@@ -15,7 +15,8 @@ function Education(){
                  Bachelor of Science in Computer Science, Systems concentration
               </Typography>
               <Typography variant = "body1"  >
-                Related completed courses: Object Oriented Programming & Design, Introduction to Data Structures, Design & Analysis of Algorithms, Operating Systems, Database Design & Implementation
+                Related completed courses: Introduction to Artificial Intelligence, Natural Language Processing, Object Oriented Programming & Design, Introduction to Data Structures, Design & Analysis of Algorithms, Operating Systems, Database Design & Implementation, Internet of Things
+                
               </Typography>
             <br></br>
           <Typography variant = "h6"  >
