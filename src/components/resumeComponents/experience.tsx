@@ -6,7 +6,14 @@ function Experience(){
             <b><u>WORK EXPERIENCE</u></b>
             <br></br>
 
-            <b>Website Application Developer, Intern </b>, Young Scientist Academy | Wilmington | <b>September 2023 - December 2023 </b>
+            <b>Junior Software Developer </b>, PS Solutions | Wilmington, NC | <b>January 2024 - Present</b>
+            <Typography variant = "body1">
+                <ul>
+            
+                </ul>
+              </Typography>
+
+            <b>Website Application Developer, Intern </b>, Young Scientist Academy | Wilmington, NC | <b>September 2023 - December 2023 </b>
             <Typography variant = "body1">
                 <ul>
                   <li>
