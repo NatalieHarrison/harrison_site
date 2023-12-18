@@ -11,6 +11,30 @@ function Projects(){
             <Typography variant = "body1" >
               <ul>
               <li>
+             <b>YSA Organization Website</b> | <i>Python, Django, Bootstrap</i> | <b> Fall 2023 </b>
+                  <ol>
+                    - Acquired foundational skills in Django through initial project development.
+                  </ol>
+                  <ol>
+                    - Building a dataset to store user information, student details, and team data. 
+                  </ol>
+                  <ol>
+                    - Features such as team names, points tracking, team bios, and individual student profiles within the team structure. 
+                  </ol>
+                  <ol>
+                    - Utilizing Adobe XD to create a skeleton focused on including all the basic features and layout for the web application.
+                  </ol>
+                  <ol>
+                    - 
+                  </ol>
+                 
+                 
+                </li>
+
+
+
+
+              <li>
               <a href= "https://www.studiance.com"> <b>Studiance</b> </a> | <i>TypeScript, React, AWS, Material UI, Scrum Methodology</i> | <b> Summer 2023 </b>
                   <ol>
                     - Study tool with curated ambiance with a goal to eliminate distractions and multitasking. Built for students and professionals seeking a focused virtual work environment. 
@@ -41,16 +65,6 @@ function Projects(){
                     - Managed group of 5 students as Project Manager.
                   </ol>
              
-                </li>
-
-                <li>
-                <b>Calculus I Calculator</b> |<i>Typescript, React, MathJS, Material-UI</i> | <b>  Spring 2022 </b>
-                  <ol>
-                    - Developed a calculator that solves simple expressions, algebraic expressions and derivatives.
-                  </ol>
-                  <ol>
-                    - Accomplished with the help of my mentors, Sam Taylor and Lee Gilliam.
-                  </ol>
                 </li>
 
                 <li>
