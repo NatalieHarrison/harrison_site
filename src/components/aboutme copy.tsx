@@ -3,13 +3,15 @@ import Box from '@mui/material/Box';
 import { Container, Typography } from '@mui/material';
 import headshot from "./../headshot.jpeg"
 import Grid from '@mui/material/Grid';
+
+import { PRIMARY_COLOR, SECONDARY_COLOR, ACCENT_COLOR, BACKGROUND_COLOR } from './colors';
 function AboutMeCopy(){
   return(
       <Box sx = {{mt: '20px', height: '100vh'}}>
         <Grid container direction="row" justifyContent="center" alignItems="center" >
           <Grid xs = {11} md = {8}>
 
-            <Container sx = {{backgroundColor: '#ED6A5A', mb: '20px',p:1, borderRadius: 1}}> 
+            <Container sx = {{backgroundColor: PRIMARY_COLOR, mb: '20px',p:1, borderRadius: 1}}> 
               <Typography variant = 'h4' align='center' sx = {{color: 'white'}}>
                 About Me
               </Typography>

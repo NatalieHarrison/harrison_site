@@ -4,14 +4,15 @@ import { Button, Container, Stack, Typography } from '@mui/material';
 import headshot from "./../headshot.jpeg"
 import Grid from '@mui/material/Grid';
 import { Link } from 'react-router-dom';
+import { PRIMARY_COLOR, SECONDARY_COLOR, ACCENT_COLOR, BACKGROUND_COLOR } from './colors';
 function AboutMe(){
   return(
-      <Box sx = {{mt: '20px', backgroundColor: '#ED6A5A', mb: '20px',p:1, borderRadius: 1}}>
+      <Box sx = {{mt: '20px', backgroundColor: PRIMARY_COLOR, mb: '20px',p:1, borderRadius: 1}}>
         <Grid container direction="row" justifyContent="center" alignItems="center" >
           <Grid xs = {11} md = {12}>
 
 
-            <Container sx = {{backgroundColor: '#ED6A5A', mb: '20px',p:1, borderRadius: 1}}> 
+            <Container sx = {{backgroundColor: PRIMARY_COLOR , mb: '20px',p:1, borderRadius: 1}}> 
               <Typography variant = 'h5' align='center' sx = {{color: 'white', mb: '10px'}}>
                 Hello, I'm <b>Natalie Harrison</b>!
               </Typography>
@@ -30,7 +31,7 @@ function AboutMe(){
                 <Typography variant = 'h6' align='left' sx = {{color: 'white', mr: '5px'}}> Learn more about me </Typography> 
                 <Button variant='contained'  sx = {{backgroundColor: 'white', textTransform: 'none', ":hover": {bgcolor: 'white'}}}>
                   <Link to= "/about" style={{ textDecoration: 'none' }}>
-                    <Typography color={'#ED6A5A'}>
+                    <Typography color={PRIMARY_COLOR}>
                       here!
                     </Typography>
                   </Link>

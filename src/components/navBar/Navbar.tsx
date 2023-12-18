@@ -9,14 +9,16 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import React from "react";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import { Stack } from "@mui/system";
+
+import { PRIMARY_COLOR, SECONDARY_COLOR, ACCENT_COLOR, BACKGROUND_COLOR } from '../colors';
   
 const Navbar = () => {
   return (
-  <Box sx ={{backgroundColor: '#55C5D1'}}>
+  <Box sx ={{backgroundColor: PRIMARY_COLOR}}>
     <Grid  container direction="row" justifyContent="center" alignItems="center" spacing = {1}>
       <Grid xs = {12} md = {4}> 
 
-        <Typography variant = "h6" sx ={{ color: '#F9F5EB', ml: '20px'}}>
+        <Typography variant = "h6" sx ={{ color: 'white', ml: '20px'}}>
           Natalie Harrison
         </Typography>
       </Grid>
@@ -30,7 +32,7 @@ const Navbar = () => {
 
                 <Button variant="text" sx = {{textTransform: 'none'}}>
                   <Link to= "/" style={{ textDecoration: 'none' }}>
-                    <Typography variant = "subtitle1" component="div" sx ={{ color: '#F9F5EB'}}>
+                    <Typography variant = "subtitle1" component="div" sx ={{ color: 'white'}}>
                     Home
                     </Typography>
                     </Link>
@@ -40,7 +42,7 @@ const Navbar = () => {
                 <Button variant="text" sx = {{textTransform: 'none'}}>
                   <Link to= "/about" style={{ textDecoration: 'none' }}>
                     
-                  <Typography variant = "subtitle1"  sx ={{ color: '#F9F5EB'}}>
+                  <Typography variant = "subtitle1"  sx ={{ color: 'white'}}>
                     About
                   </Typography>
                   
@@ -50,7 +52,7 @@ const Navbar = () => {
 
                 <Button variant="text" sx = {{textTransform: 'none'}}>
                   <Link to= "/resume" style={{ textDecoration: 'none' }}>
-                    <Typography variant = "subtitle1"  sx ={{ color: '#F9F5EB'}}>
+                    <Typography variant = "subtitle1"  sx ={{ color: 'white'}}>
                       Resume
                     </Typography>
                   </Link>
@@ -58,7 +60,7 @@ const Navbar = () => {
 
                 <Button variant="text" sx = {{textTransform: 'none'}}>
                   <Link to= "/tools" style={{ textDecoration: 'none' }}>
-                    <Typography variant = "subtitle1" sx ={{ color: '#F9F5EB'}}>
+                    <Typography variant = "subtitle1" sx ={{ color: 'white'}}>
                       Tools
                     </Typography>
                     
@@ -72,11 +74,11 @@ const Navbar = () => {
       <Grid xs ={12} md = {4}>
             <Stack  direction="row"  alignItems="center"   spacing={1} sx = {{ml :'20px'}}>
   
-              <IconButton  href='https://github.com/NatalieHarrison' sx = {{textTransform: 'none', backgroundColor: '#4699C2', mt: '5px', mb: '5px'}}>
+              <IconButton  href='https://github.com/NatalieHarrison' sx = {{textTransform: 'none', backgroundColor: SECONDARY_COLOR, mt: '5px', mb: '5px'}}>
                 <GitHubIcon/>
               </IconButton>
 
-              <IconButton  href="https://www.linkedin.com/in/natalieharrison45"  sx = {{textTransform: 'none', backgroundColor: '#4699C2'  }}>
+              <IconButton  href="https://www.linkedin.com/in/natalieharrison45"  sx = {{textTransform: 'none', backgroundColor: SECONDARY_COLOR  }}>
                 <LinkedInIcon/>
               </IconButton>
 
@@ -84,14 +86,14 @@ const Navbar = () => {
                 Projects: 
               </Typography>
 
-              <Button href="https://ksuid.net"  sx = {{textTransform: 'none', backgroundColor: '#4699C2'  }}>
-                <Typography sx = {{color: '#F9F5EB'}}>
+              <Button href="https://ksuid.net"  sx = {{textTransform: 'none', backgroundColor: SECONDARY_COLOR  }}>
+                <Typography sx = {{color: 'white'}}>
                   KSuid
                 </Typography>
               </Button>
 
-              <Button  href="https://www.headstogetherhealth.com"   sx = {{textTransform: 'none', backgroundColor: '#4699C2'  }}>
-                <Typography sx = {{color: '#F9F5EB'}}>
+              <Button  href="https://www.headstogetherhealth.com"   sx = {{textTransform: 'none', backgroundColor: SECONDARY_COLOR  }}>
+                <Typography sx = {{color: 'white'}}>
                   Heads Together Health
                 </Typography>
               </Button>

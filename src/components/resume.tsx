@@ -6,10 +6,12 @@ import Skills from './resumeComponents/skills';
 import Projects from './resumeComponents/projects';
 import Experience from './resumeComponents/experience';
 import Involvement from './resumeComponents/involvement';
+
+import { PRIMARY_COLOR, SECONDARY_COLOR, ACCENT_COLOR, BACKGROUND_COLOR } from './colors';
 function Resume (){
   return(
     <Box  mt = '20px' >
-        <Container sx = {{backgroundColor: '#ED6A5A',p:1, borderRadius: 1}}>
+        <Container sx = {{backgroundColor: PRIMARY_COLOR ,p:1, borderRadius: 1}}>
           <Typography variant = 'h4' align='center' sx = {{color: 'white'}}>
                 2023 Resume
               </Typography>
