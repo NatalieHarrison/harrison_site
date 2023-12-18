@@ -28,10 +28,10 @@ function AboutMeCopy(){
           In 2012, at the age of 12, I began my coding journey by learning my first language, HTML. It all began when I wanted to modify the appearance of a blog I was running. Starting with templates, I soon found myself making tiny adjustments that gradually transformed into significant modifications. At the time, it was only an after-school activity I enjoyed, never thinking much of it.
           <br></br>
           <br></br>
-          In early 2020, as I contemplated my college major, I felt a pull towards Computer Science. The allure of problem-solving and the potential to create transformative technologies held my interest. It was a visit to the Kennedy Space Center, where I witnessed the first crewed flight launch from SpaceX, that solidified my decision. In that moment, I knew that Computer Science was my true calling.
+          In early 2020, as I contemplated my college major, I felt a pull towards computer science. The idea of solving problems and the potential to create transformative technologies drove my interest. It was a visit to the Kennedy Space Center, where I witnessed the first crewed flight launch from SpaceX, that solidified my decision. In that moment, I knew that computer science was my calling.
           <br></br>
           <br></br>
-          From then on, my life's purpose became clear - to be part of a team that builds technology propelling humanity forward and leaving an undeniable mark on history. This goal drives me every day as I pursue my studies in Computer Science. 
+          From then on, my life's purpose became clear - to be part of a team that builds technology to move humanity forward and leave a mark on history. This goal drives me every day as I work in computer science.
         </Typography>
 
       </Grid>
@@ -42,11 +42,11 @@ function AboutMeCopy(){
         <Typography textAlign='center' > 
         <b> How did I build this website?</b>
         <br></br>
-        Adopting the principles of the scrum methodology, I used GitHub to outline the development of this website. There, I created a summary, a protoype, and a list of features I wanted to include. The repository can be viewed <a href = "https://github.com/NatalieHarrison/harrison-site"> here</a>. 
+        Using the principles of the scrum methodology, I utilized GitHub to outline the development of this website. There, I created a summary, a protoype, and a list of features I wanted to include. The repository can be viewed <a href = "https://github.com/NatalieHarrison/harrison-site"> here</a>. 
 
-        Once the groundwork was set, I constructed the project's skeleton, refined elements until I achieved the layout, keeping functionality and user experience in mind. 
+        Once the groundwork was set, I built the project's skeleton, edited elements until I achieved the basic layout that kept functionality and user experience in mind. 
 
-        I used AWS for deployment and Go Daddy to secure a domain name, React as the framework and Typescript as the primary language.
+        I used AWS for deployment and Go Daddy to secure a domain name. React as the framework and Typescript as the primary language.
         </Typography>
       </Grid>
 
