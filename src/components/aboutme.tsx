@@ -18,12 +18,12 @@ function AboutMe(){
               </Typography>
 
               <Typography variant = 'h5' align='center' sx = {{color: 'white', mb: '10px'}}>
-                I'm a dedicated student studying Computer Science at the University of North Carolina - Wilmington. 
+                I'm a Junior Software Developer at PS Solutions in Wilmington, North Carolina.
               </Typography>
 
               <Typography variant = 'h5' align='center' sx = {{color: 'white', mb: '10px'}}>
                 With a strong interest in software development, engineering, artificial intelligence and autonomy. 
-                I'm eager to explore coding and utilize it to create innovative technology. 
+                I'm passionate about learning  and utilizing my skills to create innovative technology. 
               </Typography>
               
               <Stack direction = "row" justifyContent="center"
