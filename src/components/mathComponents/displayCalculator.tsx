@@ -60,17 +60,11 @@ function DisplayCalculator (){
         <div> 
           <Button variant = "outlined"
           onClick = {simplifyClick} >Simplify</Button>
-          {showSimplify && (
-            <div>
-              <Simplify></Simplify>
-            </div>
-          )}
-
-          {showSimplify &&<Box/>}
+        
         </div>
 
       <ClickAwayListener onClickAway={handleClickAway}>
-        <Box sx={{ position: 'relative' }}>
+        <Box>
           <IconButton type="button" onClick={handleClick}>
           <HelpOutlineIcon></HelpOutlineIcon>
           </IconButton>
@@ -83,6 +77,14 @@ function DisplayCalculator (){
       </ClickAwayListener>
 
       </Stack>
+
+      {showSimplify && (
+            <div>
+              <Simplify></Simplify>
+            </div>
+          )}
+
+          {showSimplify}
   
   
       <Stack  direction = "row" spacing = {.5}  sx = {{mt: '10px', mb: '10px'}}>
