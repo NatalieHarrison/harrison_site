@@ -33,7 +33,7 @@ const TimerTool = () => {
 
 
   return(
-    <Box sx = {{backgroundColor: PRIMARY_COLOR ,boxShadow: 8, width: '90%', borderRadius: 2, height: '35%'}}>
+    <Box sx = {{backgroundColor: PRIMARY_COLOR ,boxShadow: 8, width: '100%', borderRadius: 2, height: '35%'}}>
 
         <Box>
             <Grid container direction = 'row' justifyContent="center" alignItems="center"> 
@@ -43,7 +43,7 @@ const TimerTool = () => {
             </Grid>
 
         {!startTimer &&
-          <Grid container direction = "row" justifyContent='center' alignItems= "center" spacing={5} sx = {{mt: '10px', ml: '10px',mr: '10px'}}>
+          <Grid container direction = "row" justifyContent='center' alignItems= "center" spacing={5} sx = {{mt: '10px', ml: '5px',mr: '10px'}}>
             <Grid xs = {4} md = {4}>
               <TextField  label="Hours" InputLabelProps={{shrink: true, }} variant="filled" sx = {{backgroundColor: 'white', borderRadius: 1, "& label.Mui-focused": {
               color: "#1b4332"},   "& .MuiFilledInput-underline:after": {borderBottomColor: "#1b4332"} }} value={hrsInput} onChange={(e) => setHrsInput(e.target.value)}/>
@@ -55,7 +55,7 @@ const TimerTool = () => {
               />
             </Grid>
             <Grid xs = {3} md = {3}>
-              <Button onClick = {startTimerClick} sx = {{color: 'white', backgroundColor: SECONDARY_COLOR, mb: '10px', ml: '10px'}} >
+              <Button onClick = {startTimerClick} sx = {{color: 'white', backgroundColor: SECONDARY_COLOR, mb: '10px', ml: '5px'}} >
                 <PlayArrowIcon/>
               </Button>
             </Grid>
