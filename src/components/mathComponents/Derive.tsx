@@ -2,6 +2,7 @@ import { ButtonGroup, TextField, Button, Stack, Box, List, ListItem, FormControl
 import React, { useState } from "react";
 import { create, all } from "mathjs";
 import Select,  { SelectChangeEvent } from '@mui/material/Select';
+import { PRIMARY_COLOR, SECONDARY_COLOR, ACCENT_COLOR, BACKGROUND_COLOR } from '../colors';
 
 
 export const Derivative = () => {
@@ -63,7 +64,7 @@ export const Derivative = () => {
   }
 
     return (
-        <Box>
+        <Box sx = {{backgroundColor: PRIMARY_COLOR ,boxShadow: 8, width: '90%', borderRadius: 2}}>
         <Box maxWidth="xs" sx={{ ml: 7, fontSize: 25 }}>
           <List>
             {list.map((lists) => (
@@ -76,24 +77,24 @@ export const Derivative = () => {
             id="equation"
             variant="outlined"
             value={input}
-            onChange={(e) => setInput(e.target.value)}
+            onChange={(e) => setInput(e.target.value)} sx = {{backgroundColor: 'white', ml: '10px'}}
           />
-          <Button onClick={handleClick} variant="contained"  sx = {{backgroundColor: '#4699C2', ":hover": {
-              bgcolor: '#55C5D1'
+          <Button onClick={handleClick} variant="contained"  sx = {{backgroundColor: SECONDARY_COLOR, ":hover": {
+              bgcolor: PRIMARY_COLOR
             }}}>
             Derive
           </Button>
         </Stack>
 
         <Stack>
-      <ButtonGroup sx = {{mt:2}}disableElevation variant="contained">
+      <ButtonGroup sx = {{mt:2, ml: '10px'}}disableElevation variant="contained">
             <Button 
             onClick = {() => setInput(input + "π")}
             sx = {{
               width: 62.5,
               fontSize: 30, 
-              backgroundColor: '#4699C2', ":hover": {
-                bgcolor: '#55C5D1'
+              backgroundColor: SECONDARY_COLOR, ":hover": {
+                bgcolor: PRIMARY_COLOR
               }
             }}>𝝅</Button>
             <Button 
@@ -101,8 +102,8 @@ export const Derivative = () => {
             sx = {{
               width: 62.5,
               fontSize: 20,
-              backgroundColor: '#4699C2', ":hover": {
-                bgcolor: '#55C5D1'
+              backgroundColor: SECONDARY_COLOR, ":hover": {
+                bgcolor: PRIMARY_COLOR
               }
             }}>√</Button>
             
@@ -111,8 +112,8 @@ export const Derivative = () => {
             sx = {{
               width: 62.5,
               fontSize: 20,
-              backgroundColor: '#4699C2', ":hover": {
-                bgcolor: '#55C5D1'
+              backgroundColor: SECONDARY_COLOR, ":hover": {
+                bgcolor: PRIMARY_COLOR
               }
             }}>^</Button>
             <FormControl sx={{ width: 50 }}> 
@@ -122,7 +123,7 @@ export const Derivative = () => {
               value={selectValue}
               label= "&lt;"
               onChange={handleChange}
-              sx = {{height: 65, width: 62.5}}
+              sx = {{height: 65, width: 62.5, backgroundColor: 'white'}}
             >
               
               <MenuItem value={'<'} onClick = {() => setInput(input + "<")}   > &lt; </MenuItem>
@@ -149,41 +150,41 @@ export const Derivative = () => {
       </ButtonGroup>
 
       
-      <ButtonGroup sx = {{mt:.2, width: 250}}disableElevation variant="contained">
-        <Button onClick = {() => setInput(input + "cos()")} sx = {{backgroundColor: '#4699C2', ":hover": {
-              bgcolor: '#55C5D1'
+      <ButtonGroup sx = {{mt:.2, width: 250, ml: '10px'}}disableElevation variant="contained">
+        <Button onClick = {() => setInput(input + "cos()")} sx = {{backgroundColor: SECONDARY_COLOR, ":hover": {
+              bgcolor: PRIMARY_COLOR
             }}}
           >cos</Button>
 
-        <Button onClick = {() => setInput(input + "sin()")} sx = {{backgroundColor: '#4699C2', ":hover": {
-              bgcolor: '#55C5D1'
+        <Button onClick = {() => setInput(input + "sin()")} sx = {{backgroundColor: SECONDARY_COLOR, ":hover": {
+              bgcolor: PRIMARY_COLOR
             }}}
           >sin</Button>
 
-        <Button onClick = {() => setInput(input + "tan()")} sx = {{backgroundColor: '#4699C2', ":hover": {
-              bgcolor: '#55C5D1'
+        <Button onClick = {() => setInput(input + "tan()")} sx = {{backgroundColor: SECONDARY_COLOR, ":hover": {
+              bgcolor: PRIMARY_COLOR
             }}}
           >tan</Button>
 
-        <Button onClick = {unHideInverse} sx = {{backgroundColor: '#4699C2', ":hover": {
-              bgcolor: '#55C5D1'
+        <Button onClick = {unHideInverse} sx = {{backgroundColor: SECONDARY_COLOR, ":hover": {
+              bgcolor: PRIMARY_COLOR
             }}}> Inverse </Button>
         </ButtonGroup>
         {openInverse && (
             <div>
               <ButtonGroup sx = {{mt:.2, width: 250}}disableElevation variant="contained">
-              <Button onClick = {() => setInput(input + "arccos()")} sx = {{backgroundColor: '#4699C2', ":hover": {
-              bgcolor: '#55C5D1'
+              <Button onClick = {() => setInput(input + "arccos()")} sx = {{backgroundColor: SECONDARY_COLOR, ":hover": {
+              bgcolor: PRIMARY_COLOR
             } }}
                 >arccos</Button>
 
-              <Button onClick = {() => setInput(input + "arcsin()")} sx = {{backgroundColor: '#4699C2', ":hover": {
-              bgcolor: '#55C5D1'
+              <Button onClick = {() => setInput(input + "arcsin()")} sx = {{backgroundColor: SECONDARY_COLOR, ":hover": {
+              bgcolor: PRIMARY_COLOR
             }}}
                 >arcsin</Button>
 
-              <Button onClick = {() => setInput(input + "arctan()")} sx = {{backgroundColor: '#4699C2', ":hover": {
-              bgcolor: '#55C5D1'
+              <Button onClick = {() => setInput(input + "arctan()")} sx = {{backgroundColor: SECONDARY_COLOR, ":hover": {
+              bgcolor: PRIMARY_COLOR
             }}}
                 >arctan</Button>
             </ButtonGroup>

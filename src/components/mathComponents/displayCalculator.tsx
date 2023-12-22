@@ -88,30 +88,28 @@ function DisplayCalculator (){
   
   
       <Stack  direction = "row" spacing = {.5}  sx = {{mt: '10px', mb: '10px'}}>
-      <div>
-      <Button variant = "outlined" onClick = {derivativeClick}>Derivative</Button>
-      <br></br>
+        <Button variant = "outlined" onClick = {derivativeClick}>Derivative</Button>
+
+        <ClickAwayListener onClickAway={handleClickAway1}>
+          <Box sx={{ position: 'relative' }}>
+            <IconButton type="button" onClick={handleClick1}>
+            <HelpOutlineIcon></HelpOutlineIcon>
+            </IconButton>
+            {open1 ? (
+              <Box sx = {styles}>
+                Used for solving derivatives
+              </Box>
+            ) : null}
+          </Box>
+        </ClickAwayListener> 
+        
+      </Stack>
+
       {showDerivative &&(
         <div>
           <Derivative></Derivative>
         </div>
       )}
-    
-      </div>
-
-      <ClickAwayListener onClickAway={handleClickAway1}>
-        <Box sx={{ position: 'relative' }}>
-          <IconButton type="button" onClick={handleClick1}>
-          <HelpOutlineIcon></HelpOutlineIcon>
-          </IconButton>
-          {open1 ? (
-            <Box sx = {styles}>
-              Used for solving derivatives
-            </Box>
-          ) : null}
-        </Box>
-      </ClickAwayListener> 
-      </Stack>
 
     </div>
 
