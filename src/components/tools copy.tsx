@@ -18,20 +18,12 @@ function ToolsCopy() {
 
         <Grid container direction = "row" >
 
-          <Grid xs = {12} md = {6}>
-
-            <Typography variant = "h6">
-              Calculator
-            </Typography>
+          <Grid xs = {12} md = {6} sx = {{mt: '10px'}}>
             <DisplayCalculator/>
           </Grid>
 
 
-          <Grid xs = {12} md = {6} >
-            <Typography variant = "h6" sx = {{mb: '15px'}}>
-
-              Countdown Timer
-            </Typography> 
+          <Grid xs = {12} md = {6} sx = {{mt: '10px'}}>
             <TimerTool/>
           </Grid>
 
