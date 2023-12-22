@@ -19,6 +19,7 @@ const ToDoList = () => {
   const handleClick = () => {
     const newList = [...list, input];
     setList(newList)
+    setInput("")
   }
 
   function ListItem(props: {
