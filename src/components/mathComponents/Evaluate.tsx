@@ -235,7 +235,7 @@ export const Evaluate = () => {
       </ButtonGroup>
 
       
-      <ButtonGroup sx = {{mt:.2, width: 250, ml: '10px'}}disableElevation variant="contained">
+      <ButtonGroup sx = {{mt:.2, width: 250, ml: '10px', mb:'10px'}}disableElevation variant="contained">
         <Button onClick = {() => setInput(input + "cos()")} sx = {{ backgroundColor: SECONDARY_COLOR, ":hover": {
               bgcolor: PRIMARY_COLOR
             }}}
@@ -257,7 +257,7 @@ export const Evaluate = () => {
         </ButtonGroup>
         {openInverse && (
             <div>
-              <ButtonGroup sx = {{mt:.2, width: 250}}disableElevation variant="contained">
+              <ButtonGroup sx = {{mt:.2, width: 250, mb:'10px', ml: '10px'}}disableElevation variant="contained">
               <Button onClick = {() => setInput(input + "arccos()")} sx = {{ backgroundColor: SECONDARY_COLOR, ":hover": {
               bgcolor: PRIMARY_COLOR
             }}}
