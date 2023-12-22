@@ -4,6 +4,9 @@ import Stack from '@mui/material/Stack';
 import React, {useState} from 'react'
 import PauseIcon from '@mui/icons-material/Pause';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import Typography from '@mui/material/Typography';
+
+import { PRIMARY_COLOR, SECONDARY_COLOR, ACCENT_COLOR, BACKGROUND_COLOR } from '../colors';
 
 interface ICountdown{
   hours: number;
@@ -15,9 +18,12 @@ const CountDownTimer = ({ hours = 0, minutes = 0, seconds = 60}:ICountdown) => {
   const [pause, setPause] = useState(false)
   const [play, setPlay] = useState(false)
   const [time, setTime] = React.useState<ICountdown>({hours,minutes,seconds});
-
+  
 
   const tick = () => {
+    // if (time.hours === 0 && time.minutes === 0 && time.seconds === 1){
+    //   const alarm1 = new Audio(alarmSound); alarm1.play()
+    // }
     if (pause == true){
       setTime({hours: time.hours, minutes: time.minutes, seconds: time.seconds})
     }
@@ -50,7 +56,8 @@ const CountDownTimer = ({ hours = 0, minutes = 0, seconds = 60}:ICountdown) => {
 
   }
 
-  const reset = () => setTime({hours: time.hours, minutes: time.minutes, seconds: time.seconds})
+  const reset = () => setTime({hours: time.hours, minutes: time.minutes, seconds: time.seconds});
+
 
   React.useEffect(() => {
     const timerId = setInterval (() => tick(), 1000)
@@ -59,30 +66,24 @@ const CountDownTimer = ({ hours = 0, minutes = 0, seconds = 60}:ICountdown) => {
 
   return(
     <Box>
-      
-      <Stack direction = "row">
-      <p>
-        {`${time.hours.toString().padStart(2, '0')}:${time.minutes
-              .toString()
-              .padStart(2, '0')}:${time.seconds.toString().padStart(2, '0')}`}
-        </p>
-        {!pause &&
-        <Button variant="contained" onClick = {() => setPause(true)} sx = {{ml: '10px',backgroundColor: '#4699C2', ":hover": {
-          bgcolor: '#55C5D1'
-        } }}>
-            <PauseIcon/>
-        </Button>
-}
+      <Stack direction = "row" spacing = {1} justifyContent="center" alignItems="center">
+        <Typography variant='h3'color= 'white'>
+          {`${time.hours.toString().padStart(2, '0')}:${time.minutes
+                .toString()
+                .padStart(2, '0')}:${time.seconds.toString().padStart(2, '0')}`}
+        </Typography>
 
-        {pause && (
-            <Button variant="contained" onClick = {() => setPause(false)} sx = {{ml: '10px', backgroundColor: '#4699C2', ":hover": {
-              bgcolor: '#55C5D1'
-            }}}>
-              <PlayArrowIcon/>
+          {!pause &&
+            <Button variant="outlined" onClick = {() => setPause(true)} sx = {{color: 'white', backgroundColor: SECONDARY_COLOR, mb: '10px', ml: '10px'}}>
+                <PauseIcon/>
             </Button>
-        )}
-      
-        
+          }
+
+          {pause && (
+              <Button variant="outlined" onClick = {() => setPause(false)} sx = {{color: 'white', backgroundColor: SECONDARY_COLOR, mb: '10px', ml: '10px'}}>
+                <PlayArrowIcon/>
+              </Button>
+          )}
       </Stack>
     </Box>
   )
