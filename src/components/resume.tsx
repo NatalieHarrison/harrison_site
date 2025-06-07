@@ -13,18 +13,17 @@ function Resume (){
     <Box  mt = '20px' >
         <Container sx = {{backgroundColor: PRIMARY_COLOR ,p:1, borderRadius: 1}}>
           <Typography variant = 'h4' align='center' sx = {{color: 'white'}}>
-                2024 Resume
+                2025 Resume
               </Typography>
         </Container>
 
         <Container sx = {{backgroundColor:'white'}}>
-          <Education></Education>
           <Experience></Experience>
-          <Projects></Projects> 
           <Skills></Skills>
+          <Education></Education>
+          <Projects></Projects> 
           <Involvement></Involvement>
         </Container>
-
     </Box>
 
   )
