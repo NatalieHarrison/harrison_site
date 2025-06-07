@@ -10,16 +10,13 @@ function Skills(){
             <Typography variant = "subtitle1" align = "left" component="div" sx ={{flexGrow:1}}> 
             <ul>
               <li>
-                Programming Languages: JavaScript, TypeScript, Python, Java, HTML/CSS, SQL
+                Programming Languages: JavaScript, TypeScript, Python, Java, HTML/CSS, SQL, C#
               </li>
               <li>
-                Framework: React, Flask, Django 
+                Framework: Angular, React, .NET, EF Core
               </li>
               <li>
-                Developer Tools: AWS, Amplify, Amplify Studio, Route 53, Git, Go Daddy, Visual Studio Code, PyCharm, IntelliJ
-              </li>
-              <li>
-                Libraries: NumPy, MathJS, MaterialUI
+                Developer Tools: AWS, Amplify, Amplify Studio, Route 53, GitHub, Go Daddy, Visual Studio Code, PyCharm, IntelliJ, Visual Studio
               </li>
             </ul>
             </Typography>
