@@ -16,7 +16,7 @@ function Skills(){
                 Framework: Angular, React, .NET, EF Core
               </li>
               <li>
-                Developer Tools: AWS, Amplify, Amplify Studio, Route 53, GitHub, Go Daddy, Visual Studio Code, PyCharm, IntelliJ, Visual Studio
+                Developer Tools: AWS, Amplify, Amplify Studio, Route 53, GitHub, Go Daddy, Visual Studio Code, PyCharm, IntelliJ, Visual Studio, Claude Code
               </li>
             </ul>
             </Typography>
